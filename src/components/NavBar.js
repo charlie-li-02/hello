@@ -1,64 +1,52 @@
 import React from 'react'
-import CustomButton from "./CustomButton";
+import ActionButton from "./ActionButton";
 import logo from '../logo.svg'
 import logoMobile from '../logoMobile.svg'
-import {Toolbar, Typography} from "@material-ui/core";
+import {MuiThemeProvider, Toolbar, Typography} from "@material-ui/core";
 import {makeStyles} from "@material-ui/core/styles";
 
 const styles = makeStyles({
     bar:{
-        paddingTop: "1.15rem",
-        backgroundColor: "#fff",
-        ['@media (max-width:780px)']: {
-            flexDirection: "column"
-        }
-    },
-    logo: {
-        width: "15%",
-        ['@media (max-width:780px)']: {
-            display: "none"
-        }
-    },
-    logoMobile:{
-        width: "100%",
-        display: "none",
-        ['@media (max-width:780px)']: {
-            display: "inline-block"
-        }
+        paddingTop: "1rem",
+        backgroundColor: "#ffffff",
     },
     menuItem: {
         cursor: "pointer",
-        flexGrow: 1,
+        fontSize: "20px",
+        marginLeft: "10px",
+        padding: "20px",
+        marginRight: "0px",
         "&:hover": {
-            color:  "#4f25c8"
-        },
-        ['@media (max-width:780px)']: {
-            paddingBottom: "1rem"    }
+            textDecoration: "underline",
+            textUnderlineOffset: "3px"
+        }
+    },
+    button: {
+        cursor: "pointer",
+        left: "200px",
+        marginRight: "300px"
     }
 })
 
 function NavBar() {
     const classes = styles()
     return (
-        <Toolbar position="sticky" color="rgba(0, 0, 0, 0.87)" className={classes.bar}>
-            <img src={logo} className={classes.logo}/>
-            <img src={logoMobile} className={classes.logoMobile}/>
+        <Toolbar position="sticky" color="rgba(0, 0, 0, 0)" className={classes.bar}>
             <Typography variant="h6" className={classes.menuItem}>
                 About
             </Typography>
             <Typography variant="h6" className={classes.menuItem}>
-                Blog
+                Skills
             </Typography>
             <Typography variant="h6" className={classes.menuItem}>
-                Careers
+                Projects
             </Typography>
             <Typography variant="h6" className={classes.menuItem}>
-                Demos
+                Hobbies
             </Typography>
             <Typography variant="h6" className={classes.menuItem}>
-                Contact Us
+                Contact me
             </Typography>
-            <CustomButton/>
         </Toolbar>
     )
 }

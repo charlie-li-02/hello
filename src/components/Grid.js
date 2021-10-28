@@ -1,7 +1,7 @@
 import React from 'react'
 import {Typography} from '@material-ui/core'
 import {makeStyles} from '@material-ui/core/styles'
-import CustomButton from "./CustomButton";
+import ActionButton from "./ActionButton";
 
 const styles = makeStyles({
     wrapper: {
@@ -23,7 +23,7 @@ function Grid(props) {
             <div className={classes.item}>{icon}</div>
             <Typography className={classes.item} variant="h5">{title}</Typography>
             <div className={classes.item}>
-                <CustomButton  txt={btnTitle}/>
+                <ActionButton txt={btnTitle}/>
             </div>
         </div>
     )
