@@ -12,8 +12,9 @@ const gitHubURL = "https://github.com/charlie-li-02";
 
 const styles = makeStyles({
     wrapper: {
+        background: "none",
         position: "fixed",
-        bottom: "20px",
+        bottom: "10px",
         left: "50%",
         msTransform: "translate(-50%, -50%)",
         transform: "translate(-50%, -50%)"
@@ -24,7 +25,7 @@ function Footer() {
     const classes = styles();
 
     return (
-        <BottomNavigation position="sticky" className={classes.wrapper}>
+        <BottomNavigation className={classes.wrapper}>
             <BottomNavigationAction label="Facebook" icon={<FacebookIcon style={{fill: "#000000"}}/>} onClick={openFacebook}/>
             <BottomNavigationAction label="Instagram" icon={<InstagramIcon style={{fill: "#000000"}}/>} onClick={openInstagram}/>
             <BottomNavigationAction label="LinkedIn" icon={<LinkedInIcon style={{fill: "#000000"}}/>} onClick={openLinkedIn}/>

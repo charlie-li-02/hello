@@ -5,10 +5,10 @@ import {withStyles} from "@material-ui/core";
 const StyledButton = withStyles({
     root: {
         display: "flex",
-        fontSize: "20px",
+        fontSize: "13px",
         alignItems: "center",
         justifyContent: "center",
-        height: "50px",
+        height: "30px",
         boxSizing: "content-box",
         borderRadius: 0,
         background: "#000000",
@@ -27,7 +27,6 @@ const StyledButton = withStyles({
         },
     },
     label: {
-        textTransform: 'capitalize',
     },
 })(Button);
 
