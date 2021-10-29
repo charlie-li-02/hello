@@ -30,9 +30,10 @@ const StyledButton = withStyles({
     },
 })(Button);
 
-function ActionButton(text) {
+function ActionButton(props) {
+    const {text, onClick} = props;
     return (
-        <StyledButton variant="contained">{text.txt}</StyledButton>
+        <StyledButton variant="contained" onClick={onClick} >{text}</StyledButton>
     )
 }
 

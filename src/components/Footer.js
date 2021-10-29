@@ -5,10 +5,10 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
-const facebookURL = 'https://www.facebook.com/Ch13fCharl3s/';
+const gitHubURL = "https://github.com/charlie-li-02";
 const instagramURL = "https://www.instagram.com/chvr.li.e/";
 const linkedInURL = "https://www.linkedin.com/in/charlie-li-1025/";
-const gitHubURL = "https://github.com/charlie-li-02";
+const facebookURL = 'https://www.facebook.com/Ch13fCharl3s/';
 
 const styles = makeStyles({
     wrapper: {
@@ -26,16 +26,16 @@ function Footer() {
 
     return (
         <BottomNavigation className={classes.wrapper}>
-            <BottomNavigationAction label="Facebook" icon={<FacebookIcon style={{fill: "#000000"}}/>} onClick={openFacebook}/>
+            <BottomNavigationAction label="GitHub" icon={<GitHubIcon style={{fill: "#000000"}}/>} onClick={openGitHub}/>
             <BottomNavigationAction label="Instagram" icon={<InstagramIcon style={{fill: "#000000"}}/>} onClick={openInstagram}/>
             <BottomNavigationAction label="LinkedIn" icon={<LinkedInIcon style={{fill: "#000000"}}/>} onClick={openLinkedIn}/>
-            <BottomNavigationAction label="GitHub" icon={<GitHubIcon style={{fill: "#000000"}}/>} onClick={openGitHub}/>
+            <BottomNavigationAction label="Facebook" icon={<FacebookIcon style={{fill: "#000000"}}/>} onClick={openFacebook}/>
         </BottomNavigation>
     )
 }
 
-function openFacebook() {
-    window.open(facebookURL, '_blank').focus();
+function openGitHub() {
+    window.open(gitHubURL, '_blank').focus();
 }
 
 function openInstagram() {
@@ -46,8 +46,8 @@ function openLinkedIn() {
     window.open(linkedInURL, '_blank').focus();
 }
 
-function openGitHub() {
-    window.open(gitHubURL, '_blank').focus();
+function openFacebook() {
+    window.open(facebookURL, '_blank').focus();
 }
 
 export default Footer

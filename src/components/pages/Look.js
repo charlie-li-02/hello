@@ -3,7 +3,7 @@ import {createTheme, makeStyles} from "@material-ui/core";
 export const theme = createTheme({
     palette: {
         primary: {
-            main: "#131313",
+            main: "#000000",
         },
         secondary: {
             main: "#ffffff",
@@ -23,7 +23,7 @@ export const styles = makeStyles({
         margin: "auto",
         textAlign: "center"
     },
-    heading: {
+    homePageHeading: {
         cursor: "pointer",
         marginTop: "15rem",
         "&:hover": {
@@ -32,14 +32,42 @@ export const styles = makeStyles({
             textDecorationThickness: "3px"
         }
     },
+    homePageSubHeading:{
+        marginTop: "2rem",
+    },
+    heading: {
+        position: "sticky",
+        width: "500px",
+        margin: "auto",
+        fontSize: "60px",
+        textAlign: "center",
+    },
     subHeading:{
         marginTop: "2rem",
     },
-    grid:{
+    body: {
+        fontSize: "20px",
+        marginTop: "5px",
+    },
+    horizontalStackContacts:{
         display: "flex",
-        justifyContent: "center",
         alignItems: "center",
         flexWrap: "wrap",
+        justifyContent: "flex-start",
+        flexDirection: "column",
+    },
+    contactLayout: {
+        marginTop: "2rem",
+        marginLeft: "10rem",
+        position: "sticky",
+        display: "flex",
+        width: "90%",
+        alignItems: "center",
+        justifyContent: "center",
+        flexDirection: "row",
+    },
+    emailForm: {
+        width: "500px"
     },
 
 })

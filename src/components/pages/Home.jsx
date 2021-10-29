@@ -11,10 +11,10 @@ function Home() {
         <div className="Home">
             <MuiThemeProvider theme={Look.theme}>
                 <div className={classes.wrapper}>
-                    <Typography variant="h1" className={classes.heading} color="primary" onClick={hello}>
+                    <Typography variant="h1" className={classes.homePageHeading} color="primary" onClick={hello}>
                         Hello
                     </Typography>
-                    <Typography variant="h5" className={classes.subHeading} color="primary">
+                    <Typography variant="h5" className={classes.homePageSubHeading} color="primary">
                         Welcome to Charlie's website!
                     </Typography>
                 </div>
