@@ -54,7 +54,7 @@ function NavBar() {
     const classes = styles();
     return (
         <Toolbar position="sticky" color="rgba(0, 0, 0, 0)" className={classes.bar}>
-            <Link to="/" className={classes.menuItem}>HOME</Link>
+            <Link to="/hello" className={classes.menuItem}>HOME</Link>
             <Link to="/about" className={classes.menuItem}>ABOUT</Link>
             <Link to="/skills" className={classes.menuItem}>SKILLS</Link>
             <Link to="/projects" className={classes.menuItem}>PROJECTS</Link>
