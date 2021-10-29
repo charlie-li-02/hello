@@ -5,6 +5,9 @@ import Stack from "@mui/material/Stack";
 import {Typography, styled} from "@material-ui/core";
 import ActionButton from "./ActionButton";
 import * as Look from "./pages/Look";
+import{ init } from 'emailjs-com';
+import * as emailjs from "emailjs-com";
+init("user_jG4QtTBI0VeQsSypNIHkH");
 
 
 const TextFieldStyled = styled(TextField) ({
@@ -99,58 +102,29 @@ function EmailForm() {
 }
 
 
-
 function sendEmail() {
     let name = document.getElementById("name-input").value;
     let email = document.getElementById("email-input").value;
     let subject = document.getElementById("subject-input").value;
     let message = document.getElementById("message-input").value;
 
-    const Mail = require('../utils/mail');
 
-    const options = {
-        subject: subject,
-        message: message
-    }
 
-    const mail = new Mail({
-        subject: options.subject,
-        message: options.message,
-        errorCallback: function(err) {
-            console.log('error: ' + err);
-        }
-    });
+    const templateParams = {
+        from_name: name,
+        from_email: email,
+        message: message,
+        notes: subject,
+    };
 
-    mail.send();
-
-    // let senderEmail = 'charlie.website.message@gmail.com';
-    // let receiverEmail = 'charlie.zh.li.1025@gmail.com';
-    //
-    // let emailObj = {
-    //     from: senderEmail,
-    //     to: receiverEmail,
-    //     subject: subject,
-    //     text: message
-    // };
-    //
-    // const nodemailer = require('nodemailer');
-    //
-    // const transporter = nodemailer.createTransport({
-    //     host: "smtp.gmail.com",
-    //     port: 587,
-    //     auth: {
-    //         user:  senderEmail,
-    //         pass: '5Za598BY9ARiWa^8b5eu!iIKhKhzXq'
-    //     }
-    // });
-    //
-    // transporter.sendMail(emailObj, function(error, info){
-    //     if (error) {
-    //         console.log(error);
-    //     } else {
-    //         console.log('Email sent: ' + info.response);
-    //     }
-    // });
+    emailjs.send('website', 'website-template', templateParams)
+        .then(function(response) {
+            window.alert("Message sent!");
+        }, function(error) {
+            console.log(error);
+        });
 }
+
+
 
 export default EmailForm
