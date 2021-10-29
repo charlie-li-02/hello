@@ -7,6 +7,7 @@ import ActionButton from "./ActionButton";
 import * as Look from "./pages/Look";
 import{ init } from 'emailjs-com';
 import * as emailjs from "emailjs-com";
+import {useState} from "react";
 init("user_jG4QtTBI0VeQsSypNIHkH");
 
 
@@ -32,6 +33,32 @@ const TextFieldStyled = styled(TextField) ({
 
 function EmailForm() {
     const classes = Look.styles();
+    const [isEmailInvalid, setIsEmailInvalid] = useState(false);
+    const [isButtonDisabled, setIsButtonDisabled] = useState(true);
+
+    const validateEmail = email => {
+        const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if (re.test(email)) {
+            setIsEmailInvalid(false);
+        } else {
+            setIsEmailInvalid(true);
+        }
+    }
+
+    const validateForm = () => {
+        const name = document.getElementById("name-input").value;
+        const email = document.getElementById("email-input").value;
+        const subject = document.getElementById("subject-input").value;
+        const message = document.getElementById("message-input").value;
+        if ((name !== 'Name' || name !== '') && (email !== 'Email' && email !== '')
+            && (subject !== 'Subject' && subject !== '') && (message !== 'Message' && message !== '')
+            && !isEmailInvalid) {
+            setIsButtonDisabled(false);
+        } else {
+            setIsButtonDisabled(true);
+        }
+    }
+
     return (
         <Box
             component="form"
@@ -55,6 +82,13 @@ function EmailForm() {
                             event.target.value = '';
                         }
                     }}
+                    onBlur={event => {
+                        if (event.target.value === '') {
+                            event.target.value = 'Name';
+                        }
+                        validateForm();
+                    }}
+                    InputLabelProps={{ shrink: true }}
                 />
                 <TextFieldStyled
                     required
@@ -62,11 +96,22 @@ function EmailForm() {
                     label="Required"
                     defaultValue="Email"
                     variant="standard"
+                    error={isEmailInvalid}
+                    helperText={isEmailInvalid? 'Invalid email address' : ''}
                     onFocus={event => {
                         if (event.target.value === 'Email') {
                             event.target.value = '';
                         }
                     }}
+                    onBlur={event => {
+                        if (event.target.value === '') {
+                            event.target.value = 'Email';
+                        } else {
+                            validateEmail(event.target.value)
+                        }
+                        validateForm();
+                    }}
+                    InputLabelProps={{ shrink: true }}
                 />
                 <TextFieldStyled
                     required
@@ -79,6 +124,13 @@ function EmailForm() {
                             event.target.value = '';
                         }
                     }}
+                    onBlur={event => {
+                        if (event.target.value === '') {
+                            event.target.value = 'Subject';
+                        }
+                        validateForm();
+                    }}
+                    InputLabelProps={{ shrink: true }}
                 />
                 <TextFieldStyled
                     required
@@ -94,8 +146,15 @@ function EmailForm() {
                             event.target.value = '';
                         }
                     }}
+                    onBlur={event => {
+                        if (event.target.value === '') {
+                            event.target.value = 'Enter a message';
+                        }
+                        validateForm();
+                    }}
+                    InputLabelProps={{ shrink: true }}
                 />
-                <ActionButton text={"SEND"} onClick={sendEmail}/>
+                <ActionButton text={"SEND"} onClick={sendEmail} disabled={isButtonDisabled}/>
             </Stack>
             </Box>
     );

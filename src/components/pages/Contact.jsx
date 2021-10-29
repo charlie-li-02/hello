@@ -1,9 +1,8 @@
 import React from "react";
-import {Grid, Input, MuiThemeProvider, Typography, } from "@material-ui/core";
+import {MuiThemeProvider, Typography, } from "@material-ui/core";
 import * as Look from "./Look";
 import Stack from '@mui/material/Stack';
 import HorizontalStackContacts from "../HorizontalStackContacts";
-import ActionButton from "../ActionButton";
 import EmailForm from "../EmailForm";
 import EmailIcon from '@material-ui/icons/Email';
 import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
@@ -35,12 +34,6 @@ function Contact() {
                         </Stack>
                         <Stack spacing={5} direction="column" justifyContent="flex-start" alignItems="flex-start">
                             <EmailForm/>
-                            {/*<Typography align={"left"}>SEND ME A MESSAGE </Typography>*/}
-                            {/*<Typography align={"left"}>NAME: </Typography>*/}
-                            {/*<Input align={"left"} />*/}
-                            {/*<Typography align={"left"}>MESSAGE: </Typography>*/}
-                            {/*<Input align={"left"} />*/}
-                            {/*<ActionButton txt={"SEND"} />*/}
                         </Stack>
                     </Stack>
                 </div>

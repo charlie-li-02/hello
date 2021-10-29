@@ -31,9 +31,9 @@ const StyledButton = withStyles({
 })(Button);
 
 function ActionButton(props) {
-    const {text, onClick} = props;
+    const {text, onClick, disabled} = props;
     return (
-        <StyledButton variant="contained" onClick={onClick} >{text}</StyledButton>
+        <StyledButton variant="contained" onClick={onClick} disabled={disabled}>{text}</StyledButton>
     )
 }
 
