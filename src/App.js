@@ -3,7 +3,6 @@ import './App.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Home, About, Contact, Hobbies, Projects, Skills } from "./components/pages";
 import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
 
 
 function App() {
@@ -19,7 +18,6 @@ function App() {
                     <Route path="/projects" exact component={() => <Projects />} />
                     <Route path="/skills" exact component={() => <Skills />} />
                 </Switch>
-                <Footer />
             </Router>
         </div>
     )

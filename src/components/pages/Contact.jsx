@@ -1,5 +1,5 @@
 import React from "react";
-import {MuiThemeProvider, Typography, } from "@material-ui/core";
+import {MuiThemeProvider, Typography} from "@material-ui/core";
 import * as Look from "./Look";
 import Stack from '@mui/material/Stack';
 import HorizontalStackContacts from "../HorizontalStackContacts";
@@ -10,6 +10,7 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import Footer from "../Footer";
 
 function Contact() {
     const classes = Look.styles();
@@ -20,7 +21,6 @@ function Contact() {
                 <Typography variant="h1" className={classes.heading} color="primary">
                         CONTACT ME
                 </Typography>
-
                 <div className={classes.contactLayout}>
                     <Stack spacing={12} direction="row" >
                         <Stack spacing={3} direction="column" justifyContent="flex-start" alignItems="flex-start">
@@ -37,6 +37,7 @@ function Contact() {
                         </Stack>
                     </Stack>
                 </div>
+                <Footer className={classes.footerAbsolute} />
             </MuiThemeProvider>
         </div>
     );

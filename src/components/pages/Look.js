@@ -18,8 +18,7 @@ export const theme = createTheme({
 
 export const styles = makeStyles({
     wrapper: {
-        position: "sticky",
-        width: "25%",
+        width: "50%",
         margin: "auto",
         textAlign: "center"
     },
@@ -46,8 +45,8 @@ export const styles = makeStyles({
         marginTop: "2rem",
     },
     body: {
-        fontSize: "20px",
-        marginTop: "5px",
+        fontSize: "18px",
+        marginTop: "10px",
     },
     horizontalStackContacts:{
         display: "flex",
@@ -69,5 +68,21 @@ export const styles = makeStyles({
     emailForm: {
         width: "500px"
     },
-
+    footerAbsolute: {
+        background: "none",
+        position: "absolute",
+        bottom: "10px",
+        left: "50%",
+        transform: "translate(-50%, -50%)",
+        margin: "auto",
+        textAlign: "center"
+    },
+    footer: {
+        background: "none",
+        margin: "auto",
+        textAlign: "center",
+        position: "absolute",
+        left: "50%",
+        transform: "translate(-50%, -50%)",
+    },
 })

@@ -2,6 +2,7 @@ import React from "react";
 import {MuiThemeProvider} from "@material-ui/core";
 import {Typography} from "@material-ui/core";
 import * as Look from "./Look";
+import Footer from "../Footer";
 
 
 function Home() {
@@ -15,9 +16,10 @@ function Home() {
                         Hello
                     </Typography>
                     <Typography variant="h5" className={classes.homePageSubHeading} color="primary">
-                        Welcome to Charlie's website!
+                        My name is Charlie, nice to meet you :D
                     </Typography>
                 </div>
+                <Footer className={classes.footerAbsolute}/>
             </MuiThemeProvider>
         </div>
     );
