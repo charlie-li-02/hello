@@ -19,10 +19,11 @@ function About() {
                         ABOUT ME
                     </Typography>
                 </div>
-                <Grid container spacing={4} style={{alignItems: "center"}}>
+                <div className={classes.subHeading}/>
+                <Grid container spacing={8} style={{alignItems: "center"}}>
                     <Grid item xs={5}>
                         <Container maxWidth="sm">
-                            <img src={require("../../head.jpg")} width="500" height="500" alt="Me"/>
+                            <img src={require("./images/head.jpg").default} width="500" height="500" alt="Me"/>
                         </Container>
                     </Grid>
                     <Grid item xs={7}>
@@ -64,7 +65,7 @@ function About() {
                     </Grid>
                     <Grid item xs={5}>
                         <Container maxWidth="sm">
-                            <img src={require("../../bgc.jpg")} width="400" height="400" alt="BGC Engineering"/>
+                            <img src={require("./images/bgc.jpg").default} width="400" height="400" alt="BGC Engineering"/>
                         </Container>
                     </Grid>
                     <Grid item xs={7}>
@@ -99,7 +100,7 @@ function About() {
                     </Grid>
                     <Grid item xs={5}>
                         <Container maxWidth="sm">
-                            <img src={require("../../jostle.jpg")} width="200" height="200" alt="Jostle"/>
+                            <img src={require("./images/jostle.jpg").default} width="200" height="200" alt="Jostle"/>
                         </Container>
                     </Grid>
                     <Grid item xs={7}>
@@ -137,7 +138,7 @@ function About() {
                     </Grid>
                     <Grid item xs={5}>
                         <Container maxWidth="sm">
-                            <img src={require("../../ubc.png")} width="400" height="400" alt="UBC"/>
+                            <img src={require("./images/ubc.png").default} width="400" height="400" alt="UBC"/>
                         </Container>
                     </Grid>
                     <Grid item xs={7}>
@@ -175,7 +176,7 @@ function About() {
                     </Grid>
                     <Grid item xs={5}>
                         <Container maxWidth="sm">
-                            <img src={require("../../ubc.png")} width="400" height="400" alt="UBC"/>
+                            <img src={require('./images/ubc.png').default} width="400" height="400" alt="UBC"/>
                         </Container>
                     </Grid>
                     <Grid item xs={7}>
@@ -200,6 +201,7 @@ function About() {
                         </Container>
                     </Grid>
                 </Grid>
+                <div className={classes.bigSpace}/>
                 <Footer className={classes.footer}/>
             </MuiThemeProvider>
         </div>

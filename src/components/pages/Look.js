@@ -85,4 +85,7 @@ export const styles = makeStyles({
         left: "50%",
         transform: "translate(-50%, -50%)",
     },
+    bigSpace:{
+        marginTop: "4rem",
+    },
 })
