@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {MuiThemeProvider, Typography} from "@material-ui/core";
 import Container from '@material-ui/core/Container'
 import Grid from '@mui/material/Grid';
@@ -6,10 +6,16 @@ import Stack from '@mui/material/Stack';
 import Footer from "../Footer";
 import * as Look from "./Look";
 import {Divider} from "@mui/material";
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 
 function About() {
     const classes = Look.styles();
+
+    useEffect(() => {
+        AOS.init({duration: 1500});
+    }, []);
 
     return (
         <div className="About">
@@ -21,12 +27,12 @@ function About() {
                 </div>
                 <div className={classes.subHeading}/>
                 <Grid container spacing={8} style={{alignItems: "center"}}>
-                    <Grid item xs={5}>
+                    <Grid item xs={5} data-aos="fade-up" >
                         <Container maxWidth="sm">
                             <img src={require("./images/head.jpg").default} width="500" height="500" alt="Me"/>
                         </Container>
                     </Grid>
-                    <Grid item xs={7}>
+                    <Grid item xs={7} data-aos="fade-up">
                         <Container maxWidth="md">
                             <Typography variant="h6" color="primary" align="left"
                                         style={{textIndent: "40px", fontSize: "18px"}}>
@@ -60,15 +66,15 @@ function About() {
                             </Typography>
                         </Container>
                     </Grid>
-                    <Grid item xs={12}>
+                    <Grid item xs={12} data-aos="fade-up">
                         <Divider style={{fontSize: "22px", marginTop:"50px"}}>MY JOURNEY</Divider>
                     </Grid>
-                    <Grid item xs={5}>
+                    <Grid item xs={5} data-aos="fade-up" >
                         <Container maxWidth="sm">
                             <img src={require("./images/bgc.jpg").default} width="400" height="400" alt="BGC Engineering"/>
                         </Container>
                     </Grid>
-                    <Grid item xs={7}>
+                    <Grid item xs={7} data-aos="fade-up">
                         <Container maxWidth="md">
                             <Stack direction="row" justifyContent="space-between">
                                 <Typography variant="h5" color="primary" align="left" style={{fontSize: "22px", fontWeight: "bold"}}>
@@ -98,12 +104,12 @@ function About() {
                             </Typography>
                         </Container>
                     </Grid>
-                    <Grid item xs={5}>
+                    <Grid item xs={5} data-aos="fade-up">
                         <Container maxWidth="sm">
                             <img src={require("./images/jostle.jpg").default} width="200" height="200" alt="Jostle"/>
                         </Container>
                     </Grid>
-                    <Grid item xs={7}>
+                    <Grid item xs={7} data-aos="fade-up">
                         <Container maxWidth="md">
                             <Stack direction="row" justifyContent="space-between">
                                 <Typography variant="h5" color="primary" align="left" style={{fontSize: "22px", fontWeight: "bold"}}>
@@ -136,12 +142,12 @@ function About() {
 
                         </Container>
                     </Grid>
-                    <Grid item xs={5}>
+                    <Grid item xs={5} data-aos="fade-up">
                         <Container maxWidth="sm">
                             <img src={require("./images/ubc.png").default} width="400" height="400" alt="UBC"/>
                         </Container>
                     </Grid>
-                    <Grid item xs={7}>
+                    <Grid item xs={7} data-aos="fade-up">
                         <Container maxWidth="md">
                             <Stack direction="row" justifyContent="space-between">
                                 <Typography variant="h5" color="primary" align="left" style={{fontSize: "22px", fontWeight: "bold"}}>
@@ -171,15 +177,15 @@ function About() {
                             </Typography>
                         </Container>
                     </Grid>
-                    <Grid item xs={12}>
+                    <Grid item xs={12} data-aos="fade-up">
                         <Divider style={{fontSize: "22px", marginTop:"50px"}}>EDUCATION</Divider>
                     </Grid>
-                    <Grid item xs={5}>
+                    <Grid item xs={5} data-aos="fade-up">
                         <Container maxWidth="sm">
                             <img src={require('./images/ubc.png').default} width="400" height="400" alt="UBC"/>
                         </Container>
                     </Grid>
-                    <Grid item xs={7}>
+                    <Grid item xs={7} data-aos="fade-up">
                         <Container maxWidth="md">
                             <Stack direction="row" justifyContent="space-between">
                                 <Typography variant="h5" color="primary" align="left" style={{fontSize: "22px", fontWeight: "bold"}}>

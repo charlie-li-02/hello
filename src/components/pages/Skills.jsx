@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {MuiThemeProvider, Typography} from "@material-ui/core";
 import * as Look from "./Look";
 import Grid from "@mui/material/Grid";
@@ -11,9 +11,14 @@ import WebIcon from '@mui/icons-material/Web';
 import HandymanIcon from '@mui/icons-material/HandymanOutlined';
 import AnalyticsIcon from '@mui/icons-material/AnalyticsOutlined'
 import Footer from "../Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Skills() {
     const classes = Look.styles();
+    useEffect(() => {
+        AOS.init({duration: 1500});
+    }, []);
 
     return (
         <div className="Skills">
@@ -24,7 +29,7 @@ function Skills() {
                     </Typography>
                 </div>
                 <Grid container style={{alignItems: "flex-start"}} className={classes.subHeading}>
-                    <Grid item xs={3}>
+                    <Grid item xs={3} data-aos="fade-up">
                         <Stack direction={"column"} style={{justifyItems: "center", alignItems: "center"}}>
                             <CodeIcon style={{fill: "000000", height:"100", width:"100"}}/>
                             <Typography variant="h6" color="primary" style={{fontSize:25}}>
@@ -40,7 +45,7 @@ function Skills() {
                             </Stack>
                         </Stack>
                     </Grid>
-                    <Grid item xs={3}>
+                    <Grid item xs={3} data-aos="fade-up">
                         <Stack direction={"column"} style={{justifyItems: "center", alignItems: "center"}}>
                             <WebIcon style={{fill: "000000", height:"100", width:"100"}}/>
                             <Typography variant="h6" color="primary" style={{fontSize:25}}>
@@ -55,7 +60,7 @@ function Skills() {
                             </Stack>
                         </Stack>
                     </Grid>
-                    <Grid item xs={3}>
+                    <Grid item xs={3} data-aos="fade-up">
                         <Stack direction={"column"} style={{justifyItems: "center", alignItems: "center"}}>
                             <AnalyticsIcon style={{fill: "000000", height:"100", width:"100"}}/>
                             <Typography variant="h6" color="primary" style={{fontSize:25}}>
@@ -70,7 +75,7 @@ function Skills() {
                             </Stack>
                         </Stack>
                     </Grid>
-                    <Grid item xs={3}>
+                    <Grid item xs={3} data-aos="fade-up">
                         <Stack direction={"column"} style={{justifyItems: "center", alignItems: "center"}}>
                             <HandymanIcon style={{fill: "000000", height:"100", width:"100"}}/>
                             <Typography variant="h6" color="primary" style={{fontSize:25}}>
@@ -94,7 +99,7 @@ function Skills() {
                             </Stack>
                         </Stack>
                     </Grid>
-                    <Grid item xs={12}>
+                    <Grid item xs={12} data-aos="fade-up">
                             <Stack direction={"row"} style={{justifyContent:"center"}}>
                                 <StarStack text={""} stars={0}/>
                                 <Typography variant="h6" color="primary" style={{fontSize:15, textIndent: "12px"}}>
@@ -104,13 +109,13 @@ function Skills() {
                         <div className={classes.subHeading}/>
                     </Grid>
                 </Grid>
-                <Box sx={{bgcolor: "#000000", height: "30vh"}}>
+                <Box sx={{bgcolor: "#000000"}} data-aos="fade-up">
                     <Container maxWidth={"md"}>
                         <Stack direction={"column"} style={{justifyContent: "center", alignItems: "center"}} >
                             <Typography variant="h4" className={classes.subHeading} color="secondary">
                                 THERE IS MORE TO ME
                             </Typography>
-                            <Typography variant="h6" className={classes.body} color="secondary" align="center" style={{textIndent: "35px"}}>
+                            <Typography variant="h6" className={classes.body} color="secondary" align="center" style={{textIndent: "35px", marginBottom: "30px"}}>
                                Other than the industrial skills listed above, I am also a team player, a curious learner,
                                 and an efficient worker. I can manage my time efficiently while multi-tasking, patiently
                                 work towards the solution at the rise of potentially frustrating issues, and get creative

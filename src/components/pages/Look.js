@@ -25,11 +25,7 @@ export const styles = makeStyles({
     homePageHeading: {
         cursor: "pointer",
         marginTop: "15rem",
-        "&:hover": {
-            textDecoration: "underline",
-            textUnderlineOffset: "3px",
-            textDecorationThickness: "3px"
-        }
+        margin: "auto",
     },
     homePageSubHeading:{
         marginTop: "2rem",
