@@ -81,7 +81,7 @@ function About() {
                                     BGC Engineering Inc.
                                 </Typography>
                                 <Typography variant="h6" color="primary" align="right" style={{fontSize: "18px", whiteSpace:"nowrap"}}>
-                                    2021 September - 2022 April
+                                    September 2021 - April 2022
                                 </Typography>
                             </Stack>
                             <Typography variant="h6" className={classes.body} color="primary" align="left" style={{fontSize: "20px", whiteSpace:"nowrap"}}>
@@ -116,7 +116,7 @@ function About() {
                                     Jostle
                                 </Typography>
                                 <Typography variant="h6" color="primary" align="right" style={{fontSize: "18px", whiteSpace:"nowrap"}}>
-                                    2021 January - 2021 September
+                                    January 2021 - September 2021
                                 </Typography>
                             </Stack>
                             <Typography variant="h6" className={classes.body} color="primary" align="left" style={{fontSize: "20px", whiteSpace:"nowrap"}}>
@@ -154,7 +154,7 @@ function About() {
                                     University of British Columbia
                                 </Typography>
                                 <Typography variant="h6" color="primary" align="right" style={{fontSize: "18px", whiteSpace:"nowrap"}}>
-                                    2019 September - current
+                                    September 2019 - Now
                                 </Typography>
                             </Stack>
                             <Typography variant="h6" className={classes.body} color="primary" align="left" style={{fontSize: "20px", whiteSpace:"nowrap"}}>
@@ -192,7 +192,7 @@ function About() {
                                     University of British Columbia
                                 </Typography>
                                 <Typography variant="h6" color="primary" align="right" style={{fontSize: "18px", whiteSpace:"nowrap"}}>
-                                    2018 September - current
+                                    September 2018 - Now
                                 </Typography>
                             </Stack>
                             <Typography variant="h6" className={classes.body} color="primary" align="left" style={{fontSize: "20px", whiteSpace:"nowrap"}}>

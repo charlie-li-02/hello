@@ -1,9 +1,7 @@
 import React from "react";
 import {MuiThemeProvider} from "@material-ui/core";
-import {Typography} from "@material-ui/core";
 import * as Look from "./Look";
 import Footer from "../Footer";
-import HelloImageButton from "../HelloImageButton";
 import HelloButton from "../HelloButton";
 
 const hellos = ["What's up?", "How's it going?", "Hey there.", "You look great today.", "Look around.",
@@ -16,9 +14,6 @@ function Home() {
         <div className="Home">
             <MuiThemeProvider theme={Look.theme}>
                 <div className={classes.wrapper}>
-                    {/*<Typography variant="h1" className={classes.homePageHeading} color="primary" onClick={hello}>*/}
-                    {/*    Hello*/}
-                    {/*</Typography>*/}
                     <HelloButton className={classes.homePageHeading} text={"HELLO"} onClick={hello}/>
                 </div>
                 <Footer className={classes.footerAbsolute}/>

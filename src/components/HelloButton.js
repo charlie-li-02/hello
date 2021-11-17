@@ -3,8 +3,6 @@ import {Button} from  '@material-ui/core'
 import {withStyles} from "@material-ui/core";
 import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
-import Box from "@mui/material/Box";
-import {styled} from "@mui/material/styles";
 
 const StyledButton = withStyles({
     root: {

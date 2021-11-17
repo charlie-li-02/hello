@@ -18,7 +18,6 @@ export const theme = createTheme({
 
 export const styles = makeStyles({
     wrapper: {
-        width: "50%",
         margin: "auto",
         textAlign: "center"
     },
@@ -32,7 +31,7 @@ export const styles = makeStyles({
     },
     heading: {
         position: "sticky",
-        width: "500px",
+        width: "auto",
         margin: "auto",
         fontSize: "60px",
         textAlign: "center",
