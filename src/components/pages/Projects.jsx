@@ -73,7 +73,7 @@ function Projects() {
                                 <Link component="button" variant="h6" color="primary" style={{fontSize: "18px", fontWeight: "bold"}} onClick={() => {
                                     window.open(personalWebsiteRepoLink, '_blank').focus();
                                 }}>
-                                    GitHub repo link
+                                    Find me on GitHub
                                 </Link>
                             </Stack>
                         </Container>
@@ -203,7 +203,7 @@ function Projects() {
                                 <Link component="button" variant="h6" color="primary" style={{fontSize: "18px", fontWeight: "bold"}} onClick={() => {
                                     window.open(ASCRepoLink, '_blank').focus();
                                 }}>
-                                    GitHub repo link
+                                    Find me on GitHub
                                 </Link>
                             </Stack>
                         </Container>
@@ -249,7 +249,7 @@ function Projects() {
                                 <Link component="button" variant="h6" color="primary" style={{fontSize: "18px", fontWeight: "bold"}} onClick={() => {
                                     window.open(tickRepoLink, '_blank').focus();
                                 }}>
-                                    GitHub repo link
+                                    Find me on GitHub
                                 </Link>
                             </Stack>
                         </Container>
@@ -257,10 +257,7 @@ function Projects() {
                     <Grid item xs={5} data-aos="fade-up" >
                         <Stack direction="column" spacing={0}>
                             <Container maxWidth="sm">
-                                <img src={tick1} width="500" height="335" alt="tick1" border="2px solid #000000"/>
-                            </Container>
-                            <Container maxWidth="sm">
-                                <img src={tick2} width="500" height="335" alt="tick2" border="2px solid #000000"/>
+                                <img src={tick1} width="550" height="350" alt="tick1" border="2px solid #000000"/>
                             </Container>
                         </Stack>
                     </Grid>
