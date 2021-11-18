@@ -1,11 +1,10 @@
 import React, {useEffect} from "react";
-import {MuiThemeProvider, Typography, Link, ImageList, ImageListItem, ImageListItemBar} from "@material-ui/core";
+import {MuiThemeProvider, Typography, Link} from "@material-ui/core";
 import * as Look from "./Look";
 import Grid from "@mui/material/Grid";
 import Container from "@material-ui/core/Container";
 import Divider from "@material-ui/core/Divider";
 import Stack from "@mui/material/Stack";
-import Box from "@mui/material/Box";
 import Footer from "../Footer";
 import websiteImage from './images/website.jpg';
 import insightImage from './images/insight.jpg';
@@ -17,7 +16,6 @@ import asc2 from './images/asc2.jpg';
 import asc3 from './images/asc3.jpg';
 import asc4 from './images/asc4.jpg';
 import tick1 from './images/tick1.jpg';
-import tick2 from './images/tick2.jpg';
 import shooter1 from './images/shooter1.jpg';
 import shooter2 from './images/shooter2.jpg';
 import AOS from 'aos';
@@ -80,7 +78,9 @@ function Projects() {
                     </Grid>
 
                     <Grid item xs={12} data-aos="fade-up">
-                        <Divider/>
+                        <Container maxWidth={false}>
+                            <Divider/>
+                        </Container>
                     </Grid>
 
                     <Grid item xs={12} data-aos="fade-up">
@@ -116,7 +116,9 @@ function Projects() {
                     </Grid>
 
                     <Grid item xs={12} data-aos="fade-up">
-                        <Divider/>
+                        <Container maxWidth={false}>
+                            <Divider/>
+                        </Container>
                     </Grid>
 
                     <Grid item xs={5} data-aos="fade-up" >
@@ -161,7 +163,9 @@ function Projects() {
                     </Grid>
 
                     <Grid item xs={12} data-aos="fade-up">
-                        <Divider/>
+                        <Container maxWidth={false}>
+                            <Divider/>
+                        </Container>
                     </Grid>
 
                     <Grid item xs={4} data-aos="fade-up" >
@@ -220,7 +224,9 @@ function Projects() {
                     </Grid>
 
                     <Grid item xs={12} data-aos="fade-up">
-                        <Divider/>
+                        <Container maxWidth={false}>
+                            <Divider/>
+                        </Container>
                     </Grid>
 
                     <Grid item xs={7} data-aos="fade-up">
@@ -263,7 +269,9 @@ function Projects() {
                     </Grid>
 
                     <Grid item xs={12} data-aos="fade-up">
-                        <Divider/>
+                        <Container maxWidth={false}>
+                            <Divider/>
+                        </Container>
                     </Grid>
 
                     <Grid item xs={5} data-aos="fade-up" >

@@ -67,7 +67,9 @@ function About() {
                         </Container>
                     </Grid>
                     <Grid item xs={12} data-aos="fade-up">
-                        <Divider style={{fontSize: "22px", marginTop:"50px"}}>MY JOURNEY</Divider>
+                        <Container maxWidth={false}>
+                            <Divider style={{fontSize: "22px", marginTop:"50px"}}>MY JOURNEY</Divider>
+                        </Container>
                     </Grid>
                     <Grid item xs={5} data-aos="fade-up" >
                         <Container maxWidth="sm">
@@ -178,7 +180,9 @@ function About() {
                         </Container>
                     </Grid>
                     <Grid item xs={12} data-aos="fade-up">
-                        <Divider style={{fontSize: "22px", marginTop:"50px"}}>EDUCATION</Divider>
+                        <Container maxWidth={false}>
+                            <Divider style={{fontSize: "22px", marginTop:"50px"}}>EDUCATION</Divider>
+                        </Container>
                     </Grid>
                     <Grid item xs={5} data-aos="fade-up">
                         <Container maxWidth="sm">

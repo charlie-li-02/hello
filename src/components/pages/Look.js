@@ -13,7 +13,7 @@ export const theme = createTheme({
                 'helvetica'
             ]
         }
-    }
+    },
 })
 
 export const styles = makeStyles({
@@ -42,6 +42,10 @@ export const styles = makeStyles({
     body: {
         fontSize: "18px",
         marginTop: "10px",
+    },
+    disclaimer: {
+        fontSize: "8px",
+        marginTop: "1px",
     },
     horizontalStackContacts:{
         display: "flex",
@@ -82,5 +86,8 @@ export const styles = makeStyles({
     },
     bigSpace:{
         marginTop: "4rem",
+    },
+    smallSpace:{
+        marginTop: "2rem",
     },
 })
