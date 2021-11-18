@@ -82,6 +82,7 @@ function Hobbies() {
                             Evident by how many images there are here and my overflowing display cabinets at home, this hobby
                             is truly a rabbit hole, something my father would've never foresaw (or maybe he did) many many years ago.
                         </Typography>
+                        <div className={classes.smallSpace} />
                     </Stack>
                 </Container>
                 <Container maxWidth="lg" data-aos="fade-up">
