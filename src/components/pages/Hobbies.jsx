@@ -35,31 +35,7 @@ function Hobbies() {
                     time,
                     these are only some of them!
                 </Typography>
-                <Container maxWidth={false} data-aos="fade-up">
-                    <Divider style={{fontSize: "22px", marginTop:"50px"}} data-aos="fade-up">GAMING</Divider>
-                    <div className={classes.smallSpace} />
-                    <Stack direction="column" alignItems="center" justifyContent="center">
-                        <GamesImageList/>
-                        <Typography variant="h6" className={classes.disclaimer} color="primary" align="center">
-                            IMAGES ARE ONLY FOR DEMONSTRATIVE PURPOSES, I DO NOT OWN THEM
-                        </Typography>
-                    </Stack>
-                </Container>
-                <Container maxWidth="lg" data-aos="fade-up">
-                    <Stack direction="column" alignItems="center" justifyContent="center">
-                        <Typography variant="h6" className={classes.body} color="primary" align="center">
-                            Gaming has always been a big passion of mine. Ever since I got my very first laptop, I have
-                            been into playing
-                            video games. Triple-A titles, indie games, competitive games, you name it. Most notably,
-                            Dota 2, a MOBA title,
-                            has been a favourite that I keep going back to time after time. Through this game, not only
-                            did I share moments
-                            of joy and happiness with my friends, I've also learned that, for a team to work, everyone
-                            has to take on different
-                            roles and commit to their responsibilities in order to achieve the common goal.
-                        </Typography>
-                    </Stack>
-                </Container>
+
                 <Container maxWidth={false} data-aos="fade-up">
                     <Divider style={{fontSize: "22px", marginTop:"50px"}} data-aos="fade-up">GUNPLA</Divider>
                     <div className={classes.smallSpace} />
@@ -91,13 +67,38 @@ function Hobbies() {
                     </Stack>
                 </Container>
                 <Container maxWidth={false} data-aos="fade-up">
+                    <Divider style={{fontSize: "22px", marginTop:"50px"}} data-aos="fade-up">GAMING</Divider>
+                    <div className={classes.smallSpace} />
+                    <Stack direction="column" alignItems="center" justifyContent="center">
+                        <GamesImageList/>
+                        <Typography variant="h6" className={classes.disclaimer} color="primary" align="center">
+                            IMAGES ARE ONLY FOR DEMONSTRATIVE PURPOSES, I DO NOT OWN THEM
+                        </Typography>
+                    </Stack>
+                </Container>
+                <Container maxWidth="lg" data-aos="fade-up">
+                    <Stack direction="column" alignItems="center" justifyContent="center">
+                        <Typography variant="h6" className={classes.body} color="primary" align="center">
+                            Gaming has always been a big passion of mine. Ever since I got my very first laptop, I have
+                            been into playing
+                            video games. Triple-A titles, indie games, competitive games, you name it. Most notably,
+                            Dota 2, a MOBA title,
+                            has been a favourite that I keep going back to time after time. Through this game, not only
+                            did I share moments
+                            of joy and happiness with my friends, I've also learned that, for a team to work, everyone
+                            has to take on different
+                            roles and commit to their responsibilities in order to achieve the common goal.
+                        </Typography>
+                    </Stack>
+                </Container>
+                <Container maxWidth={false} data-aos="fade-up">
                     <Divider style={{fontSize: "22px", marginTop:"50px"}} data-aos="fade-up">READING</Divider>
                     <div className={classes.smallSpace} />
                     <Grid container spacing={8} style={{alignItems: "center"}}>
                         <Grid item xs={3} data-aos="fade-up" >
                             <Stack direction="column" alignItems="center" justifyContent="center">
                                 <Container maxWidth="sm">
-                                    <img src={book1} width="428" height="202" alt="book1"/>
+                                    <img src={book1} style={{maxWidth:"100%", maxHeight:"100%"}} alt="book1"/>
                                 </Container>
                                 <Typography variant="h6" className={classes.disclaimer} color="primary" align="center">
                                     IMAGE IS ONLY FOR DEMONSTRATIVE PURPOSES, I DO NOT OWN IT
@@ -118,7 +119,7 @@ function Hobbies() {
                         <Grid item xs={3} data-aos="fade-up" >
                             <Stack direction="column" alignItems="center" justifyContent="center">
                                 <Container maxWidth="sm">
-                                    <img src={book2} width="280" height="420" alt="book2"/>
+                                    <img src={book2} style={{maxWidth:"75%", maxHeight:"575%"}} alt="book2"/>
                                 </Container>
 
                                     <Typography variant="h6" className={classes.disclaimer} color="primary" align="center">

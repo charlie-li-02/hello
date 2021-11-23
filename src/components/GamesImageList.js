@@ -26,7 +26,7 @@ function srcset(image, size, rows = 1, cols = 1) {
 export default function GamesImageList() {
     return (
         <ImageList
-            sx={{ width: 1800, height: 615 }}
+            sx={{width: "90vmax", height: "32vmax"}}
             variant="quilted"
             cols={8}
             rowHeight={150}

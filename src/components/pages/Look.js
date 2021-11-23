@@ -23,7 +23,7 @@ export const styles = makeStyles({
     },
     homePageHeading: {
         cursor: "pointer",
-        marginTop: "15rem",
+        marginTop: "15vmax",
         margin: "auto",
     },
     homePageSubHeading:{
@@ -70,7 +70,7 @@ export const styles = makeStyles({
     footerAbsolute: {
         background: "none",
         position: "absolute",
-        bottom: "10px",
+        bottom: "0.5vmax",
         left: "50%",
         transform: "translate(-50%, -50%)",
         margin: "auto",
@@ -83,6 +83,9 @@ export const styles = makeStyles({
         position: "absolute",
         left: "50%",
         transform: "translate(-50%, -50%)",
+    },
+    hugeSpace:{
+        marginTop: "6rem",
     },
     bigSpace:{
         marginTop: "4rem",

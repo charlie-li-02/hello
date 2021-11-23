@@ -37,7 +37,8 @@ function Contact() {
                         </Stack>
                     </Stack>
                 </div>
-                <Footer className={classes.footerAbsolute} />
+                <div className={classes.hugeSpace}/>
+                <Footer className={classes.footer} />
             </MuiThemeProvider>
         </div>
     );

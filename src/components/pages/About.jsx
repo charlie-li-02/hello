@@ -29,7 +29,7 @@ function About() {
                 <Grid container spacing={8} style={{alignItems: "center"}}>
                     <Grid item xs={5} data-aos="fade-up" >
                         <Container maxWidth="sm">
-                            <img src={require("./images/head.jpg").default} width="500" height="500" alt="Me"/>
+                            <img src={require("./images/head.jpg").default} style={{maxWidth:"100%", maxHeight:"100%"}} alt="Me"/>
                         </Container>
                     </Grid>
                     <Grid item xs={7} data-aos="fade-up">
@@ -73,7 +73,7 @@ function About() {
                     </Grid>
                     <Grid item xs={5} data-aos="fade-up" >
                         <Container maxWidth="sm">
-                            <img src={require("./images/bgc.jpg").default} width="400" height="400" alt="BGC Engineering"/>
+                            <img src={require("./images/bgc.jpg").default} style={{maxWidth:"85%", maxHeight:"85%"}} alt="BGC Engineering"/>
                         </Container>
                     </Grid>
                     <Grid item xs={7} data-aos="fade-up">
@@ -108,7 +108,7 @@ function About() {
                     </Grid>
                     <Grid item xs={5} data-aos="fade-up">
                         <Container maxWidth="sm">
-                            <img src={require("./images/jostle.jpg").default} width="200" height="200" alt="Jostle"/>
+                            <img src={require("./images/jostle.jpg").default} style={{maxWidth:"50%", maxHeight:"50%"}} alt="Jostle"/>
                         </Container>
                     </Grid>
                     <Grid item xs={7} data-aos="fade-up">
@@ -146,7 +146,7 @@ function About() {
                     </Grid>
                     <Grid item xs={5} data-aos="fade-up">
                         <Container maxWidth="sm">
-                            <img src={require("./images/ubc.png").default} width="400" height="400" alt="UBC"/>
+                            <img src={require("./images/ubc.png").default} style={{maxWidth:"85%", maxHeight:"85%"}} alt="UBC"/>
                         </Container>
                     </Grid>
                     <Grid item xs={7} data-aos="fade-up">
@@ -186,7 +186,7 @@ function About() {
                     </Grid>
                     <Grid item xs={5} data-aos="fade-up">
                         <Container maxWidth="sm">
-                            <img src={require('./images/ubc.png').default} width="400" height="400" alt="UBC"/>
+                            <img src={require('./images/ubc.png').default} style={{maxWidth:"85%", maxHeight:"85%"}} alt="UBC"/>
                         </Container>
                     </Grid>
                     <Grid item xs={7} data-aos="fade-up">

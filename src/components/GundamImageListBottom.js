@@ -47,7 +47,7 @@ import sazabi5 from './pages/images/gundamImages/sazabi5.jpg';
 
 export default function GundamImageListBottom() {
     return (
-        <Box sx={{ width: 1800, height: 700, overflowY: "scroll"}}>
+        <Box sx={{ width: "90vmax", height: "30vmax", overflowY: "scroll"}}>
             <ImageList variant="masonry" cols={6} gap={4}>
                 {itemData.map((item) => (
                     <ImageListItem key={item.img}>

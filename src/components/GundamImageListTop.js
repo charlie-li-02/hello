@@ -18,16 +18,10 @@ import mghinuhws1 from './pages/images/gundamImages/mghinuhws1.jpg';
 import mghinuhws2 from './pages/images/gundamImages/mghinuhws2.jpg';
 import wing1 from './pages/images/gundamImages/wing1.jpg';
 import wing2 from './pages/images/gundamImages/wing2.jpg';
-import dynames1 from './pages/images/gundamImages/dynames1.jpg';
-import dynames2 from './pages/images/gundamImages/dynames2.jpg';
-import dynames3 from './pages/images/gundamImages/dynames3.jpg';
-import kyrios1 from './pages/images/gundamImages/kyrios1.jpg';
-import kyrios2 from './pages/images/gundamImages/kyrios2.jpg';
-import kyrios3 from './pages/images/gundamImages/kyrios3.jpg';
 
 export default function GundamImageListTop() {
     return (
-        <Box sx={{ width: 1800, height: 700, overflowY: "scroll"}}>
+        <Box sx={{ width: "90vmax", height: "30vmax", overflowY: "scroll"}}>
             <ImageList variant="masonry" cols={6} gap={4}>
                 {itemData.map((item) => (
                     <ImageListItem key={item.img}>

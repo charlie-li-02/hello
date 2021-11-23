@@ -44,7 +44,7 @@ function Projects() {
                 <Grid container spacing={8} style={{alignItems: "center"}}>
                     <Grid item xs={5} data-aos="fade-up" >
                         <Container maxWidth="sm">
-                            <img src={websiteImage} width="606" height="404" alt="website" border="2px solid #000000"/>
+                            <img src={websiteImage} style={{maxWidth:"110%", maxHeight:"110%"}} alt="website" border="2px solid #000000"/>
                         </Container>
                     </Grid>
                     <Grid item xs={7} data-aos="fade-up">
@@ -93,7 +93,7 @@ function Projects() {
                                 <Typography variant="h6" color="primary" align="center" style={{fontSize: "18px", whiteSpace:"nowrap"}}>
                                     September 2020 - December 2020
                                 </Typography>
-                                <img src={insightImage} width="1438" height="548" alt="insight" border="2px solid #000000"/>
+                                <img src={insightImage} style={{maxWidth:"150%", maxHeight:"150%"}} alt="insight" border="2px solid #000000"/>
                                 <Container maxWidth="md" data-aos="fade-up">
                                     <Typography variant="h6" className={classes.body} color="primary" align="center">
                                         <b>Skills:</b> TypeScript, JavaScript, Node.js, HTML, Mocha, Chai
@@ -121,23 +121,21 @@ function Projects() {
                         </Container>
                     </Grid>
 
-                    <Grid item xs={5} data-aos="fade-up" >
-                        <Container maxWidth="sm">
-                            <Stack direction="rows" spacing={0}>
+                    <Grid item xs={6} data-aos="fade-up" >
+                            <Stack direction="rows" spacing={0} justifyContent={"center"}>
                                 <Container maxWidth="sm">
-                                    <img src={guava1} width="250" height="500" alt="guava1" border="2px solid #000000"/>
+                                    <img src={guava1} style={{maxWidth:"100%", maxHeight:"100%"}} alt="guava2" alt="guava1" border="2px solid #000000"/>
                                 </Container>
                                 <Container maxWidth="sm">
-                                    <img src={guava2} width="250" height="500" alt="guava2" border="2px solid #000000"/>
+                                    <img src={guava2} style={{maxWidth:"101%", maxHeight:"101%"}} alt="guava2" border="2px solid #000000"/>
                                 </Container>
                                 <Container maxWidth="sm">
-                                    <img src={guava3} width="250" height="500" alt="guava3" border="2px solid #000000"/>
+                                    <img src={guava3} style={{maxWidth:"100%", maxHeight:"100%"}} alt="guava3" border="2px solid #000000"/>
                                 </Container>
                             </Stack>
-                        </Container>
                     </Grid>
-                    <Grid item xs={7} data-aos="fade-up">
-                        <Container maxWidth="sm">
+                    <Grid item xs={6} data-aos="fade-up">
+                        <Container maxWidth="md">
                             <Stack direction="row" justifyContent="space-between">
                                 <Typography variant="h5" color="primary" align="left" style={{fontSize: "22px", fontWeight: "bold"}}>
                                     Guava
@@ -171,10 +169,10 @@ function Projects() {
                     <Grid item xs={4} data-aos="fade-up" >
                         <Stack direction="rows" spacing={0}>
                             <Container maxWidth="sm">
-                                <img src={asc1} width="250" height="500" alt="asc1" border="2px solid #000000"/>
+                                <img src={asc1} style={{maxWidth:"100%", maxHeight:"100%"}} alt="asc1" border="2px solid #000000"/>
                             </Container>
                             <Container maxWidth="sm">
-                                <img src={asc2} width="250" height="500" alt="asc2" border="2px solid #000000"/>
+                                <img src={asc2} style={{maxWidth:"100%", maxHeight:"100%"}} alt="asc2" border="2px solid #000000"/>
                             </Container>
                         </Stack>
                     </Grid>
@@ -215,10 +213,10 @@ function Projects() {
                     <Grid item xs={4} data-aos="fade-up" >
                         <Stack direction="rows" spacing={0}>
                             <Container maxWidth="sm">
-                                <img src={asc3} width="250" height="500" alt="asc3" border="2px solid #000000"/>
+                                <img src={asc3} style={{maxWidth:"100%", maxHeight:"100%"}} alt="asc3" border="2px solid #000000"/>
                             </Container>
                             <Container maxWidth="sm">
-                                <img src={asc4} width="250" height="500" alt="asc4" border="2px solid #000000"/>
+                                <img src={asc4} style={{maxWidth:"100%", maxHeight:"100%"}} alt="asc4" border="2px solid #000000"/>
                             </Container>
                         </Stack>
                     </Grid>
@@ -263,7 +261,7 @@ function Projects() {
                     <Grid item xs={5} data-aos="fade-up" >
                         <Stack direction="column" spacing={0}>
                             <Container maxWidth="sm">
-                                <img src={tick1} width="550" height="350" alt="tick1" border="2px solid #000000"/>
+                                <img src={tick1} style={{maxWidth:"100%", maxHeight:"100%"}} alt="tick1" border="2px solid #000000"/>
                             </Container>
                         </Stack>
                     </Grid>
@@ -277,10 +275,10 @@ function Projects() {
                     <Grid item xs={5} data-aos="fade-up" >
                         <Stack direction="column" spacing={0}>
                             <Container maxWidth="sm">
-                                <img src={shooter1} width="600" height="335" alt="shooter1" border="2px solid #000000"/>
+                                <img src={shooter1} style={{maxWidth:"100%", maxHeight:"100%"}} alt="shooter1" border="2px solid #000000"/>
                             </Container>
                             <Container maxWidth="sm">
-                                <img src={shooter2} width="600" height="335" alt="shooter2" border="2px solid #000000"/>
+                                <img src={shooter2} style={{maxWidth:"100%", maxHeight:"100%"}} alt="shooter2" border="2px solid #000000"/>
                             </Container>
                         </Stack>
                     </Grid>

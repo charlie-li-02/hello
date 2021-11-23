@@ -6,7 +6,7 @@ import {makeStyles} from "@material-ui/core/styles";
 const styles = makeStyles({
     bar:{
         paddingTop: "1rem",
-        backgroundColor: "#ffffff",
+        backgroundColor: "none",
     },
     menuItem: {
         color: "#000000",
@@ -53,7 +53,7 @@ const styles = makeStyles({
 function NavBar() {
     const classes = styles();
     return (
-        <Toolbar position="sticky" color="rgba(0, 0, 0, 0)" className={classes.bar}>
+        <Toolbar position="sticky" color="none" className={classes.bar}>
             <Link to="/hello" className={classes.menuItem}>HOME</Link>
             <Link to="/about" className={classes.menuItem}>ABOUT</Link>
             <Link to="/skills" className={classes.menuItem}>SKILLS</Link>
