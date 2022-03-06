@@ -40,18 +40,23 @@ export const styles = makeStyles({
         width: "auto",
         margin: "auto",
         marginTop: "1rem",
-        fontSize: "40px",
+        fontSize: "35px",
         textAlign: "center",
     },
     subHeading:{
-        marginTop: "2rem",
+        marginTop: "0.5rem",
+        fontSize: "25px"
     },
     body: {
         fontSize: "13px",
         marginTop: "10px",
     },
+    starStack: {
+        fontSize: "13px",
+        marginTop: "2px",
+    },
     disclaimer: {
-        fontSize: "8px",
+        fontSize: "6px",
         marginTop: "1px",
     },
     horizontalStackContacts:{
@@ -63,7 +68,7 @@ export const styles = makeStyles({
     },
     contactLayout: {
         marginTop: "2rem",
-        marginLeft: "10rem",
+        marginLeft: "1rem",
         position: "sticky",
         display: "flex",
         width: "90%",
@@ -72,7 +77,7 @@ export const styles = makeStyles({
         flexDirection: "row",
     },
     emailForm: {
-        width: "500px"
+        width: "200px"
     },
     footerAbsolute: {
         background: "none",
@@ -99,5 +104,8 @@ export const styles = makeStyles({
     },
     smallSpace:{
         marginTop: "2rem",
+    },
+    tinySpace:{
+        marginTop: "1rem",
     },
 })
