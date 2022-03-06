@@ -13,7 +13,7 @@ const styles = makeStyles({
         textDecoration: "none",
         cursor: "pointer",
         fontSize: "12px",
-        marginLeft: "6px",
+        marginLeft: "5px",
         padding: "2px",
         marginRight: "0px",
         "&:hover": {
@@ -26,7 +26,7 @@ const styles = makeStyles({
         display: "flex",
         width: "90px",
         textDecoration: "none",
-        fontSize: "12px",
+        fontSize: "11px",
         alignItems: "center",
         justifyContent: "center",
         height: "35px",
