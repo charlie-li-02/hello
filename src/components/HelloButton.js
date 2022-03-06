@@ -15,7 +15,7 @@ const StyledButton = withStyles({
         height: "38vmax",
         width: "38vmax",
         boxSizing: "content-box",
-        borderRadius: 500,
+        borderRadius: 700,
         background: "#ffffff",
         color: "#000000",
         fill:"#000000",
