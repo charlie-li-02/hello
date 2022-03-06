@@ -2,7 +2,7 @@ import React from "react";
 import {MuiThemeProvider} from "@material-ui/core";
 import * as Look from "../LookMobile";
 import Footer from "../../Footer";
-import HelloButton from "../../HelloButton";
+import HelloButton from "../../HelloButtonMobile";
 
 const hellos = ["What's up?", "How's it going?", "Hey there.", "You look great today.", "Look around.",
     "Hope you're having a great day!", "Yo, the name's Charlie.", "Hope you're having a great day!",
@@ -13,7 +13,7 @@ function HomeMobile() {
     return (
         <div className="Home">
             <MuiThemeProvider theme={Look.theme}>
-                <div className={classes.wrapper}>
+                <div className={classes.homeWrapper}>
                     <HelloButton className={classes.homePageHeading} text={"HELLO"} onClick={hello}/>
                 </div>
                 <Footer className={classes.footerAbsolute}/>

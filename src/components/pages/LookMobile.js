@@ -19,6 +19,10 @@ export const theme = createTheme({
 export const styles = makeStyles({
     wrapper: {
         margin: "auto",
+        textAlign: "center"
+    },
+    homeWrapper: {
+        margin: "auto",
         textAlign: "center",
         position: "absolute",
         left: "50%",
@@ -35,14 +39,15 @@ export const styles = makeStyles({
         position: "sticky",
         width: "auto",
         margin: "auto",
-        fontSize: "60px",
+        marginTop: "1rem",
+        fontSize: "40px",
         textAlign: "center",
     },
     subHeading:{
         marginTop: "2rem",
     },
     body: {
-        fontSize: "18px",
+        fontSize: "13px",
         marginTop: "10px",
     },
     disclaimer: {

@@ -8,7 +8,7 @@ const hellos = ["What's up?", "How's it going?", "Hey there.", "You look great t
     "Hope you're having a great day!", "Yo, the name's Charlie.", "Hope you're having a great day!",
     "Sup? I'm Charlie.", "Hello hello hello!"]
 
-function HomeRich() {
+function HomeBrowser() {
     const classes = Look.styles();
     return (
         <div className="Home">
@@ -26,4 +26,4 @@ function hello() {
     document.getElementById("helloText").innerHTML = hellos[Math.floor(Math.random() * 10)];
 }
 
-export default HomeRich;
+export default HomeBrowser;
