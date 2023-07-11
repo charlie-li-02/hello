@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback } from "react";
 import './App.css';
 import {BrowserView, MobileView} from "react-device-detect";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -6,10 +6,10 @@ import { Home, About, Contact, Hobbies, Projects, Skills } from "./components/pa
 import NavBar from "./components/NavBar";
 import NavBarMobile from "./components/NavBarMobile";
 
-
 function App() {
     return (
         <div className="App">
+
             <BrowserView>
                 <Router>
                     <NavBar />
