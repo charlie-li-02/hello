@@ -58,7 +58,7 @@ function NavBar() {
             <Link to="/about" className={classes.menuItem}>ABOUT</Link>
             <Link to="/skills" className={classes.menuItem}>SKILLS</Link>
             <Link to="/projects" className={classes.menuItem}>PROJECTS</Link>
-            <Link to="/hobbies" className={classes.menuItem}>HOBBIES</Link>
+            {/*<Link to="/hobbies" className={classes.menuItem}>HOBBIES</Link>*/}
             <Link to="/contact" className={classes.button}>CONTACT ME</Link>
         </Toolbar>
     );
