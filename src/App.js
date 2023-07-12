@@ -5,11 +5,15 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Home, About, Contact, Hobbies, Projects, Skills } from "./components/pages";
 import NavBar from "./components/NavBar";
 import NavBarMobile from "./components/NavBarMobile";
+import * as Look from "./components/pages/Look";
+import {CssBaseline, MuiThemeProvider} from "@material-ui/core";
 
 function App() {
     return (
         <div className="App">
 
+            <MuiThemeProvider theme={Look.themeDark}>
+                <CssBaseline/>
             <BrowserView>
                 <Router>
                     <NavBar />
@@ -36,6 +40,7 @@ function App() {
                     </Switch>
                 </Router>
             </MobileView>
+            </MuiThemeProvider>
         </div>
     )
 }

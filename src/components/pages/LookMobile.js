@@ -16,6 +16,25 @@ export const theme = createTheme({
     },
 })
 
+export const themeDark = createTheme({
+    palette: {
+        background: {
+            default: "#121212"
+        },
+        primary: {
+            main: "#ffffff",
+        },
+        secondary: {
+            main: "#ffffff",
+        },
+        typography: {
+            fontFamily: [
+                'helvetica'
+            ]
+        }
+    }
+});
+
 export const styles = makeStyles({
     wrapper: {
         margin: "auto",

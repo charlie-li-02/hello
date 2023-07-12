@@ -15,6 +15,7 @@ function Introduction() {
                 marginTop: "4em",
                 marginLeft: "auto",
                 marginRight: "auto",
+                color: "#ffffff"
             }}
             sequence={[
                 `initializing components...`,
