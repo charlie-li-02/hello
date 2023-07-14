@@ -1,5 +1,4 @@
 import { TypeAnimation } from 'react-type-animation';
-import * as Look from "./pages/Look";
 
 function Introduction() {
 
@@ -15,6 +14,7 @@ function Introduction() {
                 marginTop: "4em",
                 marginLeft: "auto",
                 marginRight: "auto",
+                color: "#ffffff"
             }}
             sequence={[
                 `initializing components...`,
@@ -23,7 +23,7 @@ function Introduction() {
                 1000,
                 `charlie: {\n \t"greeting": "hello",\n \t"name": "charlie",\n \t"location": "vancouver",\n}`,
                 5000,
-                `welcome to charlie\'s website!`,
+                `welcome to charlie's website!`,
                 5000
             ]}
             repeat={0}

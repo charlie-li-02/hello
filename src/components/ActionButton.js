@@ -11,20 +11,24 @@ const StyledButton = withStyles({
         height: "30px",
         boxSizing: "content-box",
         borderRadius: 0,
-        background: "#000000",
-        color: "#ffffff",
-        fill:"#000000",
+        background: "#efefef",
+        color: "#121212",
+        fill:"#ffffff",
         outline: "none",
         outlineOffset: "none",
         boxShadow: "0px 0px 0 0 #000000",
         "&:hover": {
-            backgroundColor: "#ffffff",
-            color: "#000000",
+            backgroundColor: "#121212",
+            color: "#ffffff",
             outline: "none",
             outlineOffset: "none",
-            fill: "#ffffff",
+            fill: "#121212",
             boxShadow: "0px 0px 0 0 #000000"
         },
+        "&.Mui-disabled": {
+            background: "#3e3e3e",
+            color: "#888888"
+        }
     },
     label: {
     },

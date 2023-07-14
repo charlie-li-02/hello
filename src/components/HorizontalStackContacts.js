@@ -11,7 +11,7 @@ function HorizontalStackContacts(props) {
         <div className={classes.horizontalStackContacts}>
             <Stack spacing={3} direction="row" >
                 <div>{icon}</div>
-                <Typography align={"left"}>{title}</Typography>
+                <Typography align={"left"} style={{color:"#ffffff"}}>{title}</Typography>
             </Stack>
         </div>
     )

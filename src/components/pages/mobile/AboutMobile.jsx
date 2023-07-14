@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import {MuiThemeProvider, Typography} from "@material-ui/core";
+import {Typography} from "@material-ui/core";
 import Container from '@material-ui/core/Container'
 import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
@@ -8,6 +8,7 @@ import * as Look from "../LookMobile";
 import {Divider} from "@mui/material";
 import AOS from 'aos';
 import "aos/dist/aos.css";
+import {TypeAnimation} from "react-type-animation";
 
 
 function About() {
@@ -19,11 +20,19 @@ function About() {
 
     return (
         <div className="About">
-            <MuiThemeProvider theme={Look.theme}>
                 <div className={classes.wrapper}>
-                    <Typography variant="h1" className={classes.heading} color="primary">
-                        ABOUT ME
-                    </Typography>
+                    <TypeAnimation
+                        style={{
+                            fontSize: '25px',
+                            textAlign: 'left',
+                            marginTop: "4em",
+                            marginLeft: "auto",
+                            marginRight: "auto",
+                            color: "#ffffff"
+                        }}
+                        sequence={"ABOUT ME"}
+                        repeat={0}
+                        className={classes.heading}/>
                 </div>
                 <div className={classes.subHeading}/>
                 <Grid container spacing={2} style={{alignItems: "center"}}>
@@ -35,7 +44,7 @@ function About() {
                     <Grid item xs={12} data-aos="fade-up">
                         <Container maxWidth="md">
                             <Typography variant="h6" color="primary" align="left"
-                                        style={{textIndent: "20px", fontSize: "13px"}}>
+                                        style={{fontSize: "13px"}}>
                                 Hey! I'm Charlie, a student at the University of British Columbia, majoring in Computer
                                 Science.
                             </Typography>
@@ -68,7 +77,11 @@ function About() {
                     </Grid>
                     <Grid item xs={12} data-aos="fade-up">
                         <Container maxWidth={false}>
-                            <Divider style={{fontSize: "18px", marginTop:"15px"}}>MY JOURNEY</Divider>
+                            <Divider sx={{
+                                "&::before, &::after": {
+                                    borderColor: "#8f8f8f",
+                                },
+                            }} style={{fontSize: "18px", marginTop:"15px", color: "#ffffff"}}>MY JOURNEY</Divider>
                         </Container>
                     </Grid>
                     <Grid item xs={12} data-aos="fade-up" >
@@ -90,7 +103,7 @@ function About() {
                                 Web Development Co-op
                             </Typography>
                             <Typography variant="h6" className={classes.body} color="primary" align="left">
-                                <b>Skills:</b> Python, TypeScript, JavaScript, React.js, C#, ASP.NET, Microsoft Azure, PostgreSQL
+                                <span style={{color: "#36C5F0"}}>Skills:</span> Python, TypeScript, JavaScript, React.js, C#, .NET, Microsoft Azure, PostgreSQL
                             </Typography>
                             <Typography variant="h6" className={classes.body} color="primary" align="left" style={{textIndent: "20px"}}>
                                 BGC Engineering Inc. is an international consulting firm that provides professional services in
@@ -108,7 +121,7 @@ function About() {
                     </Grid>
                     <Grid item xs={12} data-aos="fade-up">
                         <Container maxWidth="sm">
-                            <img src={require("../images/jostle.jpg").default} style={{maxWidth:"75%", maxHeight:"75%"}} alt="Jostle"/>
+                            <img src={require("../images/jostle.jpg").default} style={{maxWidth:"85%", maxHeight:"85%"}} alt="Jostle"/>
                         </Container>
                     </Grid>
                     <Grid item xs={12} data-aos="fade-up">
@@ -125,7 +138,7 @@ function About() {
                                 QA Analyst Co-op
                             </Typography>
                             <Typography variant="h6" className={classes.body} color="primary" align="left">
-                                <b>Skills:</b> Java, Selenium, JUnit, Jenkins, GitLab, Ansible Tower, Sumo Logic, AWS
+                                <span style={{color: "#36C5F0"}}>Skills:</span> Java, Selenium, JUnit, Jenkins, GitLab, Ansible Tower, Sumo Logic, AWS
                             </Typography>
                             <Typography variant="h6" className={classes.body} color="primary" align="left" style={{textIndent: "20px"}}>
                                 Jostle strives to make an intranet that would bring employees together and help leaders align their
@@ -146,7 +159,7 @@ function About() {
                     </Grid>
                     <Grid item xs={12} data-aos="fade-up">
                         <Container maxWidth="sm">
-                            <img src={require("../images/ubc.png").default} style={{maxWidth:"85%", maxHeight:"85%"}} alt="UBC"/>
+                            <img src={require("../images/ubc.jpg").default} style={{maxWidth:"85%", maxHeight:"85%"}} alt="UBC"/>
                         </Container>
                     </Grid>
                     <Grid item xs={12} data-aos="fade-up">
@@ -181,12 +194,16 @@ function About() {
                     </Grid>
                     <Grid item xs={12} data-aos="fade-up">
                         <Container maxWidth={false}>
-                            <Divider style={{fontSize: "18px", marginTop:"15px"}}>EDUCATION</Divider>
+                            <Divider sx={{
+                                "&::before, &::after": {
+                                    borderColor: "#8f8f8f",
+                                },
+                            }} style={{fontSize: "18px", marginTop:"15px", color: "#ffffff"}}>EDUCATION</Divider>
                         </Container>
                     </Grid>
                     <Grid item xs={12} data-aos="fade-up">
                         <Container maxWidth="sm">
-                            <img src={require('../images/ubc.png').default} style={{maxWidth:"85%", maxHeight:"85%"}} alt="UBC"/>
+                            <img src={require('../images/ubc.jpg').default} style={{maxWidth:"85%", maxHeight:"85%"}} alt="UBC"/>
                         </Container>
                     </Grid>
                     <Grid item xs={12} data-aos="fade-up">
@@ -210,10 +227,16 @@ function About() {
                             </Typography>
                         </Container>
                     </Grid>
+                    <Grid item xs={12}>
+                        <div className={classes.smallSpace}/>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <Footer className={classes.footer}/>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <div className={classes.bigSpace}/>
+                    </Grid>
                 </Grid>
-                <div className={classes.bigSpace}/>
-                <Footer className={classes.footer}/>
-            </MuiThemeProvider>
         </div>
     );
 }

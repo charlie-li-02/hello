@@ -6,10 +6,10 @@ import {makeStyles} from "@material-ui/core/styles";
 const styles = makeStyles({
     bar:{
         paddingTop: "1rem",
-        backgroundColor: "none",
+        backgroundColor: "none"
     },
     menuItem: {
-        color: "#000000",
+        color: "#ffffff",
         textDecoration: "none",
         cursor: "pointer",
         fontSize: "14px",
@@ -32,18 +32,18 @@ const styles = makeStyles({
         height: "40px",
         boxSizing: "content-box",
         borderRadius: 0,
-        background: "#000000",
-        color: "#ffffff",
-        fill:"#000000",
+        background: "#efefef",
+        color: "#121212",
+        fill:"#ffffff",
         outline: "none",
         outlineOffset: "none",
         boxShadow: "0px 0px 0 0 #000000",
         "&:hover": {
-            backgroundColor: "#ffffff",
-            color: "#000000",
+            backgroundColor: "#121212",
+            color: "#ffffff",
             outline: "none",
             outlineOffset: "none",
-            fill: "#ffffff",
+            fill: "#121212",
             boxShadow: "0px 0px 0 0 #000000"
         },
     },
@@ -53,6 +53,7 @@ const styles = makeStyles({
 function NavBar() {
     const classes = styles();
     return (
+        <div id = "navBar">
         <Toolbar position="sticky" color="none" className={classes.bar}>
             <Link to="/hello" className={classes.menuItem}>HOME</Link>
             <Link to="/about" className={classes.menuItem}>ABOUT</Link>
@@ -61,6 +62,7 @@ function NavBar() {
             {/*<Link to="/hobbies" className={classes.menuItem}>HOBBIES</Link>*/}
             <Link to="/contact" className={classes.button}>CONTACT ME</Link>
         </Toolbar>
+        </div>
     );
 }
 

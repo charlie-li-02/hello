@@ -10,97 +10,97 @@ function StarRating(props) {
     if (stars === 5) {
         return (
             <div>
-                <StarIcon style={{fontSize: "12px"}}/>
-                <StarIcon style={{fontSize: "12px"}}/>
-                <StarIcon style={{fontSize: "12px"}}/>
-                <StarIcon style={{fontSize: "12px"}}/>
-                <StarIcon style={{fontSize: "12px"}}/>
+                <StarIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
+                <StarIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
+                <StarIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
+                <StarIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
+                <StarIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
             </div>
         )
     } else if (stars === 4.5) {
         return (
             <div>
-                <StarIcon style={{fontSize: "12px"}}/>
-                <StarIcon style={{fontSize: "12px"}}/>
-                <StarIcon style={{fontSize: "12px"}}/>
-                <StarIcon style={{fontSize: "12px"}}/>
-                <StarHalfIcon style={{fontSize: "12px"}}/>
+                <StarIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
+                <StarIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
+                <StarIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
+                <StarIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
+                <StarHalfIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
             </div>
         )
     } else if (stars === 4) {
         return (
             <div>
-                <StarIcon style={{fontSize: "12px"}}/>
-                <StarIcon style={{fontSize: "12px"}}/>
-                <StarIcon style={{fontSize: "12px"}}/>
-                <StarIcon style={{fontSize: "12px"}}/>
-                <StarBorderIcon style={{fontSize: "12px"}}/>
+                <StarIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
+                <StarIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
+                <StarIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
+                <StarIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
+                <StarBorderIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
             </div>
         )
     } else if (stars === 3.5) {
         return (
             <div>
-                <StarIcon style={{fontSize: "12px"}}/>
-                <StarIcon style={{fontSize: "12px"}}/>
-                <StarIcon style={{fontSize: "12px"}}/>
-                <StarHalfIcon style={{fontSize: "12px"}}/>
-                <StarBorderIcon style={{fontSize: "12px"}}/>
+                <StarIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
+                <StarIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
+                <StarIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
+                <StarHalfIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
+                <StarBorderIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
             </div>
         )
     } else if (stars === 3) {
         return (
             <div>
-                <StarIcon style={{fontSize: "12px"}}/>
-                <StarIcon style={{fontSize: "12px"}}/>
-                <StarIcon style={{fontSize: "12px"}}/>
-                <StarBorderIcon style={{fontSize: "12px"}}/>
-                <StarBorderIcon style={{fontSize: "12px"}}/>
+                <StarIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
+                <StarIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
+                <StarIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
+                <StarBorderIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
+                <StarBorderIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
             </div>
         )
     } else if (stars === 2.5) {
         return (
             <div>
-                <StarIcon style={{fontSize: "12px"}}/>
-                <StarIcon style={{fontSize: "12px"}}/>
-                <StarHalfIcon style={{fontSize: "12px"}}/>
-                <StarBorderIcon style={{fontSize: "12px"}}/>
-                <StarBorderIcon style={{fontSize: "12px"}}/>
+                <StarIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
+                <StarIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
+                <StarHalfIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
+                <StarBorderIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
+                <StarBorderIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
             </div>
         )
     } else if (stars === 2) {
         return (
             <div>
-                <StarIcon style={{fontSize: "12px"}}/>
-                <StarIcon style={{fontSize: "12px"}}/>
-                <StarBorderIcon style={{fontSize: "12px"}}/>
-                <StarBorderIcon style={{fontSize: "12px"}}/>
-                <StarBorderIcon style={{fontSize: "12px"}}/>
+                <StarIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
+                <StarIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
+                <StarBorderIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
+                <StarBorderIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
+                <StarBorderIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
             </div>
         )
     } else if (stars === 1.5) {
         return (
             <div>
-                <StarIcon style={{fontSize: "12px"}}/>
-                <StarHalfIcon style={{fontSize: "12px"}}/>
-                <StarBorderIcon style={{fontSize: "12px"}}/>
-                <StarBorderIcon style={{fontSize: "12px"}}/>
-                <StarBorderIcon style={{fontSize: "12px"}}/>
+                <StarIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
+                <StarHalfIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
+                <StarBorderIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
+                <StarBorderIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
+                <StarBorderIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
             </div>
         )
     } else if (stars === 1) {
         return (
             <div>
-                <StarIcon style={{fontSize: "12px"}}/>
-                <StarBorderIcon style={{fontSize: "12px"}}/>
-                <StarBorderIcon style={{fontSize: "12px"}}/>
-                <StarBorderIcon style={{fontSize: "12px"}}/>
-                <StarBorderIcon style={{fontSize: "12px"}}/>
+                <StarIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
+                <StarBorderIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
+                <StarBorderIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
+                <StarBorderIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
+                <StarBorderIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
             </div>
         )
     } else if (stars === 0.5) {
         return (
             <div>
-                <StarHalfIcon style={{fontSize: "12px"}}/>
+                <StarHalfIcon style={{fill: "#ffffff", fontSize: "12px"}}/>
                 <StarBorderIcon style={{fontSize: "12px"}}/>
                 <StarBorderIcon style={{fontSize: "12px"}}/>
                 <StarBorderIcon style={{fontSize: "12px"}}/>
@@ -122,10 +122,10 @@ function StarRating(props) {
 
 
 function StarStackMobile(props) {
-    const {text, textFont, stars} = props;
+    const {text, stars} = props;
     return (
-        <Stack direction="row" spacing={1} style={{alignItems: "flex-end", justifyContent: "center"}}>
-            <Typography variant="h6" color="primary" style={{fontSize: textFont? textFont:"13px", marginTop: "5px"}}>
+        <Stack direction="row" spacing={1} style={{alignItems: "baseline", justifyContent: "center"}}>
+            <Typography variant="h6" color="primary" style={{fontSize: "13px"}}>
                 {text}
             </Typography>
             <StarRating stars={stars}/>

@@ -16,6 +16,27 @@ export const theme = createTheme({
     },
 })
 
+
+export const themeDark = createTheme({
+    palette: {
+        background: {
+            default: "#121212"
+        },
+        primary: {
+            main: "#ffffff",
+        },
+        secondary: {
+            main: "#ffffff",
+        },
+        typography: {
+            fontFamily: [
+                'helvetica'
+            ]
+        }
+    }
+});
+
+
 export const styles = makeStyles({
     wrapper: {
         margin: "auto",
@@ -82,7 +103,7 @@ export const styles = makeStyles({
         textAlign: "center",
         position: "absolute",
         left: "50%",
-        transform: "translate(-50%, -50%)",
+        transform: "translate(-50%, -100%)",
     },
     hugeSpace:{
         marginTop: "6rem",

@@ -5,6 +5,10 @@ import SkillsBrowser from "./browser/SkillsBrowser";
 import SkillsMobile from "./mobile/SkillsMobile";
 
 function Skills() {
+    const backdrop = document.getElementById('backdrop');
+    if (backdrop !== null) {
+        backdrop.style.backdropFilter = "blur(15px)";
+    }
     return (
         <>
             <BrowserView>

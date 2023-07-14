@@ -14,10 +14,10 @@ function Footer(props) {
     const {className} = props;
     return (
         <BottomNavigation className={className}>
-            <BottomNavigationAction label="GitHub" icon={<GitHubIcon style={{fill: "#000000"}}/>} onClick={openGitHub}/>
-            <BottomNavigationAction label="Instagram" icon={<InstagramIcon style={{fill: "#000000"}}/>} onClick={openInstagram}/>
-            <BottomNavigationAction label="LinkedIn" icon={<LinkedInIcon style={{fill: "#000000"}}/>} onClick={openLinkedIn}/>
-            <BottomNavigationAction label="Facebook" icon={<FacebookIcon style={{fill: "#000000"}}/>} onClick={openFacebook}/>
+            <BottomNavigationAction label="GitHub" icon={<GitHubIcon style={{fill: "#ffffff"}}/>} onClick={openGitHub}/>
+            <BottomNavigationAction label="Instagram" icon={<InstagramIcon style={{fill: "#ffffff"}}/>} onClick={openInstagram}/>
+            <BottomNavigationAction label="LinkedIn" icon={<LinkedInIcon style={{fill: "#ffffff"}}/>} onClick={openLinkedIn}/>
+            <BottomNavigationAction label="Facebook" icon={<FacebookIcon style={{fill: "#ffffff"}}/>} onClick={openFacebook}/>
         </BottomNavigation>
     )
 }

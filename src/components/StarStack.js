@@ -11,111 +11,111 @@ function StarRating(props) {
     if (stars === 5) {
         return (
             <div>
-                <StarIcon/>
-                <StarIcon/>
-                <StarIcon/>
-                <StarIcon/>
-                <StarIcon/>
+                <StarIcon style={{fill:"#ffffff"}}/>
+                <StarIcon style={{fill:"#ffffff"}}/>
+                <StarIcon style={{fill:"#ffffff"}}/>
+                <StarIcon style={{fill:"#ffffff"}}/>
+                <StarIcon style={{fill:"#ffffff"}}/>
             </div>
         )
     } else if (stars === 4.5) {
         return (
             <div>
-                <StarIcon/>
-                <StarIcon/>
-                <StarIcon/>
-                <StarIcon/>
-                <StarHalfIcon/>
+                <StarIcon style={{fill:"#ffffff"}}/>
+                <StarIcon style={{fill:"#ffffff"}}/>
+                <StarIcon style={{fill:"#ffffff"}}/>
+                <StarIcon style={{fill:"#ffffff"}}/>
+                <StarHalfIcon style={{fill:"#ffffff"}}/>
             </div>
         )
     } else if (stars === 4) {
         return (
             <div>
-                <StarIcon/>
-                <StarIcon/>
-                <StarIcon/>
-                <StarIcon/>
-                <StarBorderIcon/>
+                <StarIcon style={{fill:"#ffffff"}}/>
+                <StarIcon style={{fill:"#ffffff"}}/>
+                <StarIcon style={{fill:"#ffffff"}}/>
+                <StarIcon style={{fill:"#ffffff"}}/>
+                <StarBorderIcon style={{fill:"#ffffff"}}/>
             </div>
         )
     } else if (stars === 3.5) {
         return (
             <div>
-                <StarIcon/>
-                <StarIcon/>
-                <StarIcon/>
-                <StarHalfIcon/>
-                <StarBorderIcon/>
+                <StarIcon style={{fill:"#ffffff"}}/>
+                <StarIcon style={{fill:"#ffffff"}}/>
+                <StarIcon style={{fill:"#ffffff"}}/>
+                <StarHalfIcon style={{fill:"#ffffff"}}/>
+                <StarBorderIcon style={{fill:"#ffffff"}}/>
             </div>
         )
     } else if (stars === 3) {
         return (
             <div>
-                <StarIcon/>
-                <StarIcon/>
-                <StarIcon/>
-                <StarBorderIcon/>
-                <StarBorderIcon/>
+                <StarIcon style={{fill:"#ffffff"}}/>
+                <StarIcon style={{fill:"#ffffff"}}/>
+                <StarIcon style={{fill:"#ffffff"}}/>
+                <StarBorderIcon style={{fill:"#ffffff"}}/>
+                <StarBorderIcon style={{fill:"#ffffff"}}/>
             </div>
         )
     } else if (stars === 2.5) {
         return (
             <div>
-                <StarIcon/>
-                <StarIcon/>
-                <StarHalfIcon/>
-                <StarBorderIcon/>
-                <StarBorderIcon/>
+                <StarIcon style={{fill:"#ffffff"}}/>
+                <StarIcon style={{fill:"#ffffff"}}/>
+                <StarHalfIcon style={{fill:"#ffffff"}}/>
+                <StarBorderIcon style={{fill:"#ffffff"}}/>
+                <StarBorderIcon style={{fill:"#ffffff"}}/>
             </div>
         )
     } else if (stars === 2) {
         return (
             <div>
-                <StarIcon/>
-                <StarIcon/>
-                <StarBorderIcon/>
-                <StarBorderIcon/>
-                <StarBorderIcon/>
+                <StarIcon style={{fill:"#ffffff"}}/>
+                <StarIcon style={{fill:"#ffffff"}}/>
+                <StarBorderIcon style={{fill:"#ffffff"}}/>
+                <StarBorderIcon style={{fill:"#ffffff"}}/>
+                <StarBorderIcon style={{fill:"#ffffff"}}/>
             </div>
         )
     } else if (stars === 1.5) {
         return (
             <div>
-                <StarIcon/>
-                <StarHalfIcon/>
-                <StarBorderIcon/>
-                <StarBorderIcon/>
-                <StarBorderIcon/>
+                <StarIcon style={{fill:"#ffffff"}}/>
+                <StarHalfIcon style={{fill:"#ffffff"}}/>
+                <StarBorderIcon style={{fill:"#ffffff"}}/>
+                <StarBorderIcon style={{fill:"#ffffff"}}/>
+                <StarBorderIcon style={{fill:"#ffffff"}}/>
             </div>
         )
     } else if (stars === 1) {
         return (
             <div>
-                <StarIcon/>
-                <StarBorderIcon/>
-                <StarBorderIcon/>
-                <StarBorderIcon/>
-                <StarBorderIcon/>
+                <StarIcon style={{fill:"#ffffff"}}/>
+                <StarBorderIcon style={{fill:"#ffffff"}}/>
+                <StarBorderIcon style={{fill:"#ffffff"}}/>
+                <StarBorderIcon style={{fill:"#ffffff"}}/>
+                <StarBorderIcon style={{fill:"#ffffff"}}/>
             </div>
         )
     } else if (stars === 0.5) {
         return (
             <div>
-                <StarHalfIcon/>
-                <StarBorderIcon/>
-                <StarBorderIcon/>
-                <StarBorderIcon/>
-                <StarBorderIcon/>
+                <StarHalfIcon style={{fill:"#ffffff"}}/>
+                <StarBorderIcon style={{fill:"#ffffff"}}/>
+                <StarBorderIcon style={{fill:"#ffffff"}}/>
+                <StarBorderIcon style={{fill:"#ffffff"}}/>
+                <StarBorderIcon style={{fill:"#ffffff"}}/>
             </div>
         )
     } else if (stars === 0) {
         return (
             <div>
-                <StarIcon style={{fill: "#d9d9d9"}}/>
-                <StarIcon style={{fill: "#d9d9d9"}}/>
-                <StarIcon style={{fill: "#d9d9d9"}}/>
-                <StarIcon style={{fill: "#d9d9d9"}}/>
-                <StarIcon style={{fill: "#d9d9d9"}}/>
+                <StarIcon style={{fill: "#4f4f4f"}}/>
+                <StarIcon style={{fill: "#4f4f4f"}}/>
+                <StarIcon style={{fill: "#4f4f4f"}}/>
+                <StarIcon style={{fill: "#4f4f4f"}}/>
+                <StarIcon style={{fill: "#4f4f4f"}}/>
             </div>
         )
     }
