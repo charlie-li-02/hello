@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import {MuiThemeProvider, Typography, Link} from "@material-ui/core";
+import {Typography, Link} from "@material-ui/core";
 import * as Look from "../LookMobile";
 import Grid from "@mui/material/Grid";
 import Container from "@material-ui/core/Container";
@@ -18,6 +18,9 @@ import asc4 from '../images/asc4.jpg';
 import tick1 from '../images/tick1.jpg';
 import shooter1 from '../images/shooter1.jpg';
 import shooter2 from '../images/shooter2.jpg';
+import bloq1 from '../images/bloq1.png';
+import bloq2 from '../images/bloq2.png';
+import flow from '../images/flow.png';
 import AOS from 'aos';
 import "aos/dist/aos.css";
 import {TypeAnimation} from "react-type-animation";
@@ -25,6 +28,8 @@ import {TypeAnimation} from "react-type-animation";
 const personalWebsiteRepoLink = "https://github.com/charlie-li-02/Hello";
 const ASCRepoLink = "https://github.com/charlie-li-02/asc";
 const tickRepoLink = "https://github.com/charlie-li-02/tick";
+const flowRepoLink = "https://github.com/charlie-li-02/flow";
+const bloqRepoLink = "https://github.com/charlie-li-02/Bloq";
 
 function Projects() {
     const classes = Look.styles();
@@ -51,6 +56,98 @@ function Projects() {
                 </div>
                 <div className={classes.bigSpace} />
                 <Grid container spacing={2} style={{alignItems: "center"}}>
+                    <Grid item xs={12} data-aos="fade-up" >
+                        <Container maxWidth="sm">
+                            <img src={flow} style={{maxWidth:"90%", maxHeight:"90%"}} alt="flow"/>
+                        </Container>
+                    </Grid>
+                    <Grid item xs={12} data-aos="fade-up">
+                        <Container maxWidth="md">
+                            <Stack direction="row" justifyContent="space-between" alignItems="center">
+                                <Typography variant="h5" color="primary" align="left" style={{fontSize: "18px", fontWeight: "bold"}}>
+                                    flow
+                                </Typography>
+                                <Typography variant="h6" color="primary" align="right" style={{fontSize: "13px", whiteSpace:"nowrap"}}>
+                                    June 2022 - June 2022
+                                </Typography>
+                            </Stack>
+                            <Typography variant="h6" className={classes.body} color="primary" align="left">
+                                <span style={{color: "#36C5F0"}}>Skills:</span> JavaScript, React.js, Esprima, Mermaid, Material-UI
+                            </Typography>
+                            <Typography variant="h6" className={classes.body} color="primary" align="left" style={{textIndent: "20px"}}>
+                                Ever worked on a complicated new project that has multiple layers of inheritance, imports or dependencies and
+                                don't know where to start to change something? By parsing the given code base with
+                                Javascript and visualizing the analysis, me and four other team members were able to combat this common issue
+                                many developers face. Flow is a call graph analyzer for JavaScript that gives users an
+                                easy and quick way to visually see the structural overview of a given project with the click of a button.
+                            </Typography>
+                            <Stack direction="column" justifyContent="flex-start" alignItems="flex-end">
+                                <div className={classes.body}/>
+                                <Link component="button" variant="h6" color="primary" style={{fontSize: "13px", color: "#ECB22E"}} onClick={() => {
+                                    window.open(flowRepoLink, '_blank').focus();
+                                }}>
+                                    Find me on GitHub
+                                </Link>
+                            </Stack>
+                        </Container>
+                    </Grid>
+
+                    <Grid item xs={12} data-aos="fade-up">
+                        <Container maxWidth={false}>
+                            <Divider style={{background: "#8f8f8f"}}/>
+                        </Container>
+                    </Grid>
+
+                    <Grid item xs={12} data-aos="fade-up" >
+                        <Stack direction="column" spacing={0}>
+                            <Container maxWidth="sm">
+                                <img src={bloq1} style={{maxWidth:"100%", maxHeight:"100%"}} alt="bloq1"/>
+                            </Container>
+                        </Stack>
+                    </Grid>
+                    <Grid item xs={12} data-aos="fade-up">
+                        <Container maxWidth="md">
+                            <Stack direction="row" justifyContent="space-between">
+                                <Typography variant="h5" color="primary" align="left" style={{fontSize: "18px", fontWeight: "bold"}}>
+                                    Bloq
+                                </Typography>
+                                <Typography variant="h6" color="primary" align="right" style={{fontSize: "15px", whiteSpace:"nowrap"}}>
+                                    May 2022 - June 2022
+                                </Typography>
+                            </Stack>
+                            <Typography variant="h6" className={classes.body} color="primary" align="left">
+                                <span style={{color: "#36C5F0"}}>Skills:</span> Java, JavaFX, ANTLR, Python
+                            </Typography>
+                            <Typography variant="h6" className={classes.body} color="primary" align="left" style={{textIndent: "20px"}}>
+                                Aimed to be quick and easy to pick up, Bloq is a domain specific language that generates 2D tile maps designed
+                                to simplify the process of game design. Me and four other team members implemented the tokenizer, parser and evaluator
+                                of our domain specific language with Java. Then, the image generation backend was done in Python. I created a GUI
+                                with JavaFX to enable easy code editing, image output and testing.
+                            </Typography>
+                            <Stack direction="column" justifyContent="flex-start" alignItems="flex-end">
+                                <div className={classes.body}/>
+                                <Link component="button" variant="h6" color="primary" style={{fontSize: "13px", color: "#ECB22E"}} onClick={() => {
+                                    window.open(bloqRepoLink, '_blank').focus();
+                                }}>
+                                    Find me on GitHub
+                                </Link>
+                            </Stack>
+                        </Container>
+                    </Grid>
+                    <Grid item xs={12} data-aos="fade-up" >
+                        <Stack direction="column" spacing={0}>
+                            <Container maxWidth="sm">
+                                <img src={bloq2} style={{maxWidth:"100%", maxHeight:"100%"}} alt="bloq2"/>
+                            </Container>
+                        </Stack>
+                    </Grid>
+
+                    <Grid item xs={12} data-aos="fade-up">
+                        <Container maxWidth={false}>
+                            <Divider style={{background: "#8f8f8f"}}/>
+                        </Container>
+                    </Grid>
+
                     <Grid item xs={12} data-aos="fade-up" >
                         <Container maxWidth="sm">
                             <img src={websiteImage} style={{maxWidth:"90%", maxHeight:"90%"}} alt="website"/>
@@ -133,7 +230,7 @@ function Projects() {
                     <Grid item xs={12} data-aos="fade-up" >
                         <Stack direction="rows" spacing={0} justifyContent={"center"}>
                             <Container maxWidth="sm">
-                                <img src={guava1} style={{maxWidth:"100%", maxHeight:"100%"}} alt="guava2" alt="guava1"/>
+                                <img src={guava1} style={{maxWidth:"100%", maxHeight:"100%"}} alt="guava1"/>
                             </Container>
                             <Container maxWidth="sm">
                                 <img src={guava2} style={{maxWidth:"101%", maxHeight:"101%"}} alt="guava2"/>

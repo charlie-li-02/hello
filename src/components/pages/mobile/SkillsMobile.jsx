@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import {MuiThemeProvider, Typography} from "@material-ui/core";
+import {Typography} from "@material-ui/core";
 import * as Look from "../LookMobile";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
@@ -65,9 +65,9 @@ function SkillsMobile() {
                                 <StarStack text={"Java"} stars={5}/>
                                 <StarStack text={"Python"} stars={4}/>
                                 <StarStack text={"SQL"} stars={4}/>
-                                <StarStack text={"C#"} stars={3.5}/>
+                                <StarStack text={"C"} stars={4}/>
                                 <StarStack text={"C++"} stars={3.5}/>
-                                <StarStack text={"C"} stars={3}/>
+                                <StarStack text={"C#"} stars={3.5}/>
                             </Stack>
                         </Stack>
                     </Grid>

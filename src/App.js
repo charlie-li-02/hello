@@ -93,39 +93,61 @@ function App() {
     return (
         <div className="App" id="App">
             <Particles id="tsparticles" init={particlesInit} loaded={particlesLoaded} options={options}/>
+            <div id="backdrop">
             <MuiThemeProvider theme={Look.themeDark}>
                 <CssBaseline/>
-            <div id="backdrop">
-            <BrowserView>
-                <Router>
-                    <NavBar />
-                    <Switch>
-                        <Route path="/hello" exact component={() => <Home />} />
-                        <Route path="/about" exact component={() => <About />} />
-                        <Route path="/contact" exact component={() => <Contact />} />
-                        <Route path="/hobbies" exact component={() => <Hobbies />} />
-                        <Route path="/projects" exact component={() => <Projects />} />
-                        <Route path="/skills" exact component={() => <Skills />} />
-                    </Switch>
-                </Router>
-            </BrowserView>
-            <MobileView>
-                <Router>
-                    <NavBarMobile />
-                    <Switch>
-                        <Route path="/hello" exact component={() => <Home />} />
-                        <Route path="/about" exact component={() => <About />} />
-                        <Route path="/contact" exact component={() => <Contact />} />
-                        <Route path="/hobbies" exact component={() => <Hobbies />} />
-                        <Route path="/projects" exact component={() => <Projects />} />
-                        <Route path="/skills" exact component={() => <Skills />} />
-                    </Switch>
-                </Router>
-            </MobileView>
-            </div>
+                <BrowserView>
+                    <Router>
+                        <NavBar/>
+                        <Switch>
+                            <Route path="/hello" exact component={() => <Home/>}/>
+                            <Route path="/about" exact component={() => <About/>}/>
+                            <Route path="/contact" exact component={() => <Contact/>}/>
+                            <Route path="/hobbies" exact component={() => <Hobbies/>}/>
+                            <Route path="/projects" exact component={() => <Projects/>}/>
+                            <Route path="/skills" exact component={() => <Skills/>}/>
+                        </Switch>
+                    </Router>
+                </BrowserView>
+                <MobileView>
+                    <Router>
+                        <NavBarMobile/>
+                        <Switch>
+                            <Route path="/hello" exact component={() => <Home/>}/>
+                            <Route path="/about" exact component={() => <About/>}/>
+                            <Route path="/contact" exact component={() => <Contact/>}/>
+                            <Route path="/hobbies" exact component={() => <Hobbies/>}/>
+                            <Route path="/projects" exact component={() => <Projects/>}/>
+                            <Route path="/skills" exact component={() => <Skills/>}/>
+                        </Switch>
+                    </Router>
+                </MobileView>
             </MuiThemeProvider>
+            </div>
         </div>
     )
+}
+
+window.onload = () => {
+    if (document.getElementById('homeview') === null) {
+        blurBackdrop();
+    } else {
+        unblurBackdrop();
+    }
+};
+
+export function blurBackdrop() {
+    let backdrop = document.getElementById('backdrop');
+    if (backdrop !== null) {
+        backdrop.style.backdropFilter = "blur(15px)";
+    }
+}
+
+export function unblurBackdrop() {
+    let backdrop = document.getElementById('backdrop');
+    if (backdrop !== null) {
+        backdrop.style.backdropFilter = "none";
+    }
 }
 
 export default App;

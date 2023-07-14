@@ -2,22 +2,20 @@ import React from "react";
 import {BrowserView, MobileView} from 'react-device-detect';
 import HomeBrowser from "./browser/HomeBrowser";
 import HomeMobile from "./mobile/HomeMobile";
+import {unblurBackdrop} from "../../App";
 function Home() {
-
-    const backdrop = document.getElementById('backdrop');
-    if (backdrop !== null) {
-        backdrop.style.backdropFilter = "none";
-    }
+    unblurBackdrop();
     return (
-        <>
+        <div id={"homeview"}>
             <BrowserView>
                 <HomeBrowser/>
             </BrowserView>
             <MobileView>
                 <HomeMobile/>
             </MobileView>
-        </>
+        </div>
     );
 }
+
 
 export default Home;
