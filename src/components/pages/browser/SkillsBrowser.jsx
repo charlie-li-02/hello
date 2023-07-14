@@ -13,6 +13,7 @@ import AnalyticsIcon from '@mui/icons-material/AnalyticsOutlined'
 import Footer from "../../Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import {TypeAnimation} from "react-type-animation";
 
 function SkillsBrowser() {
     const classes = Look.styles();
@@ -22,17 +23,42 @@ function SkillsBrowser() {
 
     return (
         <div className="Skills">
-            <MuiThemeProvider theme={Look.theme}>
                 <div className={classes.wrapper}>
-                    <Typography variant="h1" className={classes.heading} color="primary">
-                        MY SKILLS
-                    </Typography>
+                    <TypeAnimation
+                        style={{
+                            fontSize: '50px',
+                            textAlign: 'left',
+                            marginTop: "4em",
+                            marginLeft: "auto",
+                            marginRight: "auto",
+                            color: "#ffffff"
+                        }}
+                        sequence={[
+                            "MY SKILLS",
+                            2000,
+                            "I am a team player",
+                            1500,
+                            "I am a curious learner",
+                            1500,
+                            "I am an efficient multi-tasker",
+                            1500,
+                            "I am a creative problem-solver",
+                            1500,
+                            "I am a detail-oriented person",
+                            1500,
+                            "I am a motivated learner",
+                            1500,
+                            "I am a patient troubleshooter",
+                            1500
+                        ]}
+                        repeat={Infinity}
+                        className={classes.heading}/>
                 </div>
                 <Grid container style={{alignItems: "flex-start"}} className={classes.subHeading}>
-                    <Grid item xs={3} data-aos="fade-up">
+                    <Grid item xs={4} data-aos="fade-up">
                         <Stack direction={"column"} style={{justifyItems: "center", alignItems: "center"}}>
-                            <CodeIcon style={{fill: "000000", height:"100", width:"100"}}/>
-                            <Typography variant="h6" color="primary" style={{fontSize:25}}>
+                            <CodeIcon style={{fill: "#ffffff", height:"100", width:"100"}}/>
+                            <Typography variant="h6" style={{fontSize:25, color:"#36C5F0"}}>
                                 Languages
                             </Typography>
                             <Stack direction={"column"} style={{alignItems: "flex-end"}} className={classes.subHeading}>
@@ -45,10 +71,10 @@ function SkillsBrowser() {
                             </Stack>
                         </Stack>
                     </Grid>
-                    <Grid item xs={3} data-aos="fade-up">
+                    <Grid item xs={4} data-aos="fade-up">
                         <Stack direction={"column"} style={{justifyItems: "center", alignItems: "center"}}>
-                            <WebIcon style={{fill: "000000", height:"100", width:"100"}}/>
-                            <Typography variant="h6" color="primary" style={{fontSize:25}}>
+                            <WebIcon style={{fill: "#ffffff", height:"100", width:"100"}}/>
+                            <Typography variant="h6" style={{fontSize:25, color:"#E01E5B"}}>
                                 Web
                             </Typography>
                             <Stack direction={"column"} style={{alignItems: "flex-end"}} className={classes.subHeading}>
@@ -60,10 +86,10 @@ function SkillsBrowser() {
                             </Stack>
                         </Stack>
                     </Grid>
-                    <Grid item xs={3} data-aos="fade-up">
+                    <Grid item xs={4} data-aos="fade-up">
                         <Stack direction={"column"} style={{justifyItems: "center", alignItems: "center"}}>
-                            <AnalyticsIcon style={{fill: "000000", height:"100", width:"100"}}/>
-                            <Typography variant="h6" color="primary" style={{fontSize:25}}>
+                            <AnalyticsIcon style={{fill: "#ffffff", height:"100", width:"100"}}/>
+                            <Typography variant="h6" style={{fontSize:25, color:"#2EB67D"}}>
                                 Testing
                             </Typography>
                             <Stack direction={"column"} style={{alignItems: "flex-end"}} className={classes.subHeading}>
@@ -75,32 +101,36 @@ function SkillsBrowser() {
                             </Stack>
                         </Stack>
                     </Grid>
-                    <Grid item xs={3} data-aos="fade-up">
+                    <Grid item xs={12}>
+                        <div className={classes.bigSpace}/>
+                    </Grid>
+                    <Grid item xs={12} data-aos="fade-up">
                         <Stack direction={"column"} style={{justifyItems: "center", alignItems: "center"}}>
-                            <HandymanIcon style={{fill: "000000", height:"100", width:"100"}}/>
-                            <Typography variant="h6" color="primary" style={{fontSize:25}}>
+                            <HandymanIcon style={{fill: "#ffffff", height:"100", width:"100"}}/>
+                            <Typography variant="h6" style={{fontSize:25, color:"#ECB22E"}}>
                                 Tools
                             </Typography>
-                            <Stack direction={"column"} style={{alignItems: "flex-end"}} className={classes.subHeading}>
-                                <StarStack text={"IntelliJ"} stars={5}/>
-                                <StarStack text={"Pycharm"} stars={5}/>
-                                <StarStack text={"DataGrip"} stars={5}/>
-                                <StarStack text={"Visual Studio Code"} stars={5}/>
-                                <StarStack text={"Visual Studio"} stars={3}/>
-                                <StarStack text={"Git"} stars={5}/>
-                                <StarStack text={"Jira"} stars={5}/>
-                                <StarStack text={"Postman"} stars={5}/>
-                                <StarStack text={"Insomnia"} stars={5}/>
-                                <StarStack text={"Jenkins"} stars={5}/>
-                                <StarStack text={"Microsoft Azure"} stars={4.5}/>
-                                <StarStack text={"Azure Data Studio"} stars={4}/>
-                                <StarStack text={"SQL Server Management Studio"} stars={4}/>
-                                <StarStack text={"Ansible Tower"} stars={4}/>
-                                <StarStack text={"AWS"} stars={4}/>
-                                <StarStack text={"Docker"} stars={4}/>
-                                <StarStack text={"Sumo Logic"} stars={3.5}/>
+                            <Stack direction={"row"} spacing={12} style={{alignItems: "flex-end", justifyContent: "center"}}>
+                                <Stack direction={"column"} style={{alignItems: "flex-end"}} className={classes.subHeading}>
+                                    <StarStack text={"Git"} stars={5}/>
+                                    <StarStack text={"Jira"} stars={5}/>
+                                    <StarStack text={"Postman"} stars={5}/>
+                                    <StarStack text={"Insomnia"} stars={5}/>
+                                    <StarStack text={"Jenkins"} stars={5}/>
+                                </Stack>
+                                <Stack direction={"column"} style={{alignItems: "flex-end"}} className={classes.subHeading}>
+                                    <StarStack text={"Microsoft Azure"} stars={4.5}/>
+                                    <StarStack text={"AWS"} stars={4}/>
+                                    <StarStack text={"Ansible Tower"} stars={4}/>
+                                    <StarStack text={"Docker"} stars={4}/>
+                                    <StarStack text={"Sumo Logic"} stars={3.5}/>
+                                </Stack>
                             </Stack>
+
                         </Stack>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <div className={classes.hugeSpace}/>
                     </Grid>
                     <Grid item xs={12} data-aos="fade-up">
                         <Stack direction={"row"} style={{justifyContent:"center"}}>
@@ -111,26 +141,30 @@ function SkillsBrowser() {
                         </Stack>
                         <div className={classes.subHeading}/>
                     </Grid>
+
+                    <Grid item xs={12} data-aos="fade-up">
+                        <Container maxWidth={"md"}>
+                            <Stack direction={"column"} style={{justifyContent: "center", alignItems: "center"}} >
+                                <Typography variant="h4" className={classes.subHeading} color="secondary">
+                                    THERE IS MORE TO ME
+                                </Typography>
+                                <Typography variant="h6" className={classes.body} color="secondary" align="center" style={{textIndent: "35px", marginBottom: "30px"}}>
+                                    Other than the industrial skills listed above, I am also a team player, a curious learner,
+                                    and an efficient worker. I can manage my time efficiently while multi-tasking, patiently
+                                    work towards the solution at the rise of potentially frustrating issues, and get creative
+                                    at times when it's needed. Through my experiences, I have honed my industrial skills as well as interpersonal skills,
+                                    allowing me to be an effective contributor to any team.
+                                </Typography>
+                            </Stack>
+                        </Container>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <div className={classes.bigSpace}/>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <Footer className={classes.footer}/>
+                    </Grid>
                 </Grid>
-                <Box sx={{bgcolor: "#000000"}} data-aos="fade-up">
-                    <Container maxWidth={"md"}>
-                        <Stack direction={"column"} style={{justifyContent: "center", alignItems: "center"}} >
-                            <Typography variant="h4" className={classes.subHeading} color="secondary">
-                                THERE IS MORE TO ME
-                            </Typography>
-                            <Typography variant="h6" className={classes.body} color="secondary" align="center" style={{textIndent: "35px", marginBottom: "30px"}}>
-                                Other than the industrial skills listed above, I am also a team player, a curious learner,
-                                and an efficient worker. I can manage my time efficiently while multi-tasking, patiently
-                                work towards the solution at the rise of potentially frustrating issues, and get creative
-                                at times when it's needed. Through my experiences, I have honed my industrial skills as well as interpersonal skills,
-                                allowing me to be an effective contributor to any team.
-                            </Typography>
-                        </Stack>
-                    </Container>
-                </Box>
-                <div className={classes.bigSpace}/>
-                <Footer className={classes.footer}/>
-            </MuiThemeProvider>
         </div>
     );
 }

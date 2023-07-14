@@ -20,6 +20,7 @@ import shooter1 from '../images/shooter1.jpg';
 import shooter2 from '../images/shooter2.jpg';
 import AOS from 'aos';
 import "aos/dist/aos.css";
+import {TypeAnimation} from "react-type-animation";
 
 const personalWebsiteRepoLink = "https://github.com/charlie-li-02/Hello";
 const ASCRepoLink = "https://github.com/charlie-li-02/asc";
@@ -34,17 +35,25 @@ function Projects() {
 
     return (
         <div className="Projects">
-            <MuiThemeProvider theme={Look.theme}>
                 <div className={classes.wrapper}>
-                    <Typography variant="h1" className={classes.heading} color="primary">
-                        PERSONAL PROJECTS
-                    </Typography>
+                    <TypeAnimation
+                        style={{
+                            fontSize: '25px',
+                            textAlign: 'left',
+                            marginTop: "4em",
+                            marginLeft: "auto",
+                            marginRight: "auto",
+                            color: "#ffffff"
+                        }}
+                        sequence={"PERSONAL PROJECTS"}
+                        repeat={0}
+                        className={classes.heading}/>
                 </div>
                 <div className={classes.bigSpace} />
                 <Grid container spacing={2} style={{alignItems: "center"}}>
                     <Grid item xs={12} data-aos="fade-up" >
                         <Container maxWidth="sm">
-                            <img src={websiteImage} style={{maxWidth:"90%", maxHeight:"90%"}} alt="website" border="1px solid #000000"/>
+                            <img src={websiteImage} style={{maxWidth:"90%", maxHeight:"90%"}} alt="website"/>
                         </Container>
                     </Grid>
                     <Grid item xs={12} data-aos="fade-up">
@@ -58,7 +67,7 @@ function Projects() {
                                 </Typography>
                             </Stack>
                             <Typography variant="h6" className={classes.body} color="primary" align="left">
-                                <b>Skills:</b> JavaScript, React.js, Material-UI
+                                <span style={{color: "#36C5F0"}}>Skills:</span> JavaScript, React.js, Material-UI
                             </Typography>
                             <Typography variant="h6" className={classes.body} color="primary" align="left" style={{textIndent: "20px"}}>
                                 You are probably (most definitely) looking at it right now. This website is built with
@@ -68,7 +77,7 @@ function Projects() {
                             </Typography>
                             <Stack direction="column" justifyContent="flex-start" alignItems="flex-end">
                                 <div className={classes.body}/>
-                                <Link component="button" variant="h6" color="primary" style={{fontSize: "13px", fontWeight: "bold"}} onClick={() => {
+                                <Link component="button" variant="h6" color="primary" style={{fontSize: "13px", color: "#ECB22E"}} onClick={() => {
                                     window.open(personalWebsiteRepoLink, '_blank').focus();
                                 }}>
                                     Find me on GitHub
@@ -79,7 +88,7 @@ function Projects() {
 
                     <Grid item xs={12} data-aos="fade-up">
                         <Container maxWidth={false}>
-                            <Divider/>
+                            <Divider style={{background: "#8f8f8f"}}/>
                         </Container>
                     </Grid>
 
@@ -93,10 +102,10 @@ function Projects() {
                                 <Typography variant="h6" color="primary" align="center" style={{fontSize: "13px", whiteSpace:"nowrap"}}>
                                     September 2020 - December 2020
                                 </Typography>
-                                <img src={insightImage} style={{maxWidth:"100%", maxHeight:"100%"}} alt="insight" border="1px solid #000000"/>
+                                <img src={insightImage} style={{maxWidth:"100%", maxHeight:"100%"}} alt="insight"/>
                                 <Container maxWidth="md" data-aos="fade-up">
                                     <Typography variant="h6" className={classes.body} color="primary" align="center">
-                                        <b>Skills:</b> TypeScript, JavaScript, Node.js, HTML, Mocha, Chai
+                                        <span style={{color: "#36C5F0"}}>Skills:</span> TypeScript, JavaScript, Node.js, HTML, Mocha, Chai
                                     </Typography>
                                     <Typography variant="h6" className={classes.body} color="primary" align="center" style={{textIndent: "20px"}}>
                                         Before the start of every semester, some questions often come to the mind of many UBC students:
@@ -117,20 +126,20 @@ function Projects() {
 
                     <Grid item xs={12} data-aos="fade-up">
                         <Container maxWidth={false}>
-                            <Divider/>
+                            <Divider style={{background: "#8f8f8f"}}/>
                         </Container>
                     </Grid>
 
                     <Grid item xs={12} data-aos="fade-up" >
                         <Stack direction="rows" spacing={0} justifyContent={"center"}>
                             <Container maxWidth="sm">
-                                <img src={guava1} style={{maxWidth:"100%", maxHeight:"100%"}} alt="guava2" alt="guava1" border="1px solid #000000"/>
+                                <img src={guava1} style={{maxWidth:"100%", maxHeight:"100%"}} alt="guava2" alt="guava1"/>
                             </Container>
                             <Container maxWidth="sm">
-                                <img src={guava2} style={{maxWidth:"101%", maxHeight:"101%"}} alt="guava2" border="1px solid #000000"/>
+                                <img src={guava2} style={{maxWidth:"101%", maxHeight:"101%"}} alt="guava2"/>
                             </Container>
                             <Container maxWidth="sm">
-                                <img src={guava3} style={{maxWidth:"100%", maxHeight:"100%"}} alt="guava3" border="1px solid #000000"/>
+                                <img src={guava3} style={{maxWidth:"100%", maxHeight:"100%"}} alt="guava3"/>
                             </Container>
                         </Stack>
                     </Grid>
@@ -145,7 +154,7 @@ function Projects() {
                                 </Typography>
                             </Stack>
                             <Typography variant="h6" className={classes.body} color="primary" align="left">
-                                <b>Skills:</b> Java, SQL, Oracle, JavaFX, FXML, CSS
+                                <span style={{color: "#36C5F0"}}>Skills:</span> Java, SQL, Oracle, JavaFX, FXML, CSS
                             </Typography>
                             <Typography variant="h6" className={classes.body} color="primary" align="left" style={{textIndent: "20px"}}>
                                 Organizing groceries could be a headache, especially if you have many places in the house
@@ -162,17 +171,17 @@ function Projects() {
 
                     <Grid item xs={12} data-aos="fade-up">
                         <Container maxWidth={false}>
-                            <Divider/>
+                            <Divider style={{background: "#8f8f8f"}}/>
                         </Container>
                     </Grid>
 
                     <Grid item xs={12} data-aos="fade-up" >
                         <Stack direction="rows" spacing={0}>
                             <Container maxWidth="sm">
-                                <img src={asc1} style={{maxWidth:"100%", maxHeight:"100%"}} alt="asc1" border="1px solid #000000"/>
+                                <img src={asc1} style={{maxWidth:"100%", maxHeight:"100%"}} alt="asc1"/>
                             </Container>
                             <Container maxWidth="sm">
-                                <img src={asc2} style={{maxWidth:"100%", maxHeight:"100%"}} alt="asc2" border="1px solid #000000"/>
+                                <img src={asc2} style={{maxWidth:"100%", maxHeight:"100%"}} alt="asc2"/>
                             </Container>
                         </Stack>
                     </Grid>
@@ -187,7 +196,7 @@ function Projects() {
                                 </Typography>
                             </Stack>
                             <Typography variant="h6" className={classes.body} color="primary" align="left">
-                                <b>Skills:</b> Java, JUnit, JavaFX, FXML, CSS
+                                <span style={{color: "#36C5F0"}}>Skills:</span> Java, JUnit, JavaFX, FXML, CSS
                             </Typography>
                             <Typography variant="h6" className={classes.body} color="primary" align="left" style={{textIndent: "40px"}}>
                                 Being slightly into fashion and collecting sneakers, "I thought why not create my own application to
@@ -202,7 +211,7 @@ function Projects() {
                             </Typography>
                             <Stack direction="column" justifyContent="flex-start" alignItems="flex-end">
                                 <div className={classes.body}/>
-                                <Link component="button" variant="h6" color="primary" style={{fontSize: "13px", fontWeight: "bold"}} onClick={() => {
+                                <Link component="button" variant="h6" color="primary" style={{fontSize: "13px", color: "#ECB22E"}} onClick={() => {
                                     window.open(ASCRepoLink, '_blank').focus();
                                 }}>
                                     Find me on GitHub
@@ -213,23 +222,23 @@ function Projects() {
                     <Grid item xs={12} data-aos="fade-up" >
                         <Stack direction="rows" spacing={0}>
                             <Container maxWidth="sm">
-                                <img src={asc3} style={{maxWidth:"100%", maxHeight:"100%"}} alt="asc3" border="1px solid #000000"/>
+                                <img src={asc3} style={{maxWidth:"100%", maxHeight:"100%"}} alt="asc3"/>
                             </Container>
                             <Container maxWidth="sm">
-                                <img src={asc4} style={{maxWidth:"100%", maxHeight:"100%"}} alt="asc4" border="1px solid #000000"/>
+                                <img src={asc4} style={{maxWidth:"100%", maxHeight:"100%"}} alt="asc4"/>
                             </Container>
                         </Stack>
                     </Grid>
 
                     <Grid item xs={12} data-aos="fade-up">
                         <Container maxWidth={false}>
-                            <Divider/>
+                            <Divider style={{background: "#8f8f8f"}}/>
                         </Container>
                     </Grid>
                     <Grid item xs={12} data-aos="fade-up" >
                         <Stack direction="column" spacing={0}>
                             <Container maxWidth="sm">
-                                <img src={tick1} style={{maxWidth:"100%", maxHeight:"100%"}} alt="tick1" border="1px solid #000000"/>
+                                <img src={tick1} style={{maxWidth:"100%", maxHeight:"100%"}} alt="tick1"/>
                             </Container>
                         </Stack>
                     </Grid>
@@ -244,7 +253,7 @@ function Projects() {
                                 </Typography>
                             </Stack>
                             <Typography variant="h6" className={classes.body} color="primary" align="left">
-                                <b>Skills:</b> Java, JUnit, Swing
+                                <span style={{color: "#36C5F0"}}>Skills:</span> Java, JUnit, Swing
                             </Typography>
                             <Typography variant="h6" className={classes.body} color="primary" align="left" style={{textIndent: "20px"}}>
                                 Task management is the foundation of any success, whether in school or at work.
@@ -256,7 +265,7 @@ function Projects() {
                             </Typography>
                             <Stack direction="column" justifyContent="flex-start" alignItems="flex-end">
                                 <div className={classes.body}/>
-                                <Link component="button" variant="h6" color="primary" style={{fontSize: "13px", fontWeight: "bold"}} onClick={() => {
+                                <Link component="button" variant="h6" color="primary" style={{fontSize: "13px", color: "#ECB22E"}} onClick={() => {
                                     window.open(tickRepoLink, '_blank').focus();
                                 }}>
                                     Find me on GitHub
@@ -268,14 +277,14 @@ function Projects() {
 
                     <Grid item xs={12} data-aos="fade-up">
                         <Container maxWidth={false}>
-                            <Divider/>
+                            <Divider style={{background: "#8f8f8f"}}/>
                         </Container>
                     </Grid>
 
                     <Grid item xs={12} data-aos="fade-up" >
                         <Stack direction="column" spacing={0}>
                             <Container maxWidth="sm">
-                                <img src={shooter1} style={{maxWidth:"100%", maxHeight:"100%"}} alt="shooter1" border="1px solid #000000"/>
+                                <img src={shooter1} style={{maxWidth:"100%", maxHeight:"100%"}} alt="shooter1"/>
                             </Container>
                         </Stack>
                     </Grid>
@@ -290,7 +299,7 @@ function Projects() {
                                 </Typography>
                             </Stack>
                             <Typography variant="h6" className={classes.body} color="primary" align="left">
-                                <b>Skills:</b> Python, Pygame
+                                <span style={{color: "#36C5F0"}}>Skills:</span> Python, Pygame
                             </Typography>
                             <Typography variant="h6" className={classes.body} color="primary" align="left" style={{textIndent: "20px"}}>
                                 Creating my own video game has always been a goal, though simple, it was achieved with this personal
@@ -307,15 +316,20 @@ function Projects() {
                     <Grid item xs={12} data-aos="fade-up" >
                         <Stack direction="column" spacing={0}>
                             <Container maxWidth="sm">
-                                <img src={shooter2} style={{maxWidth:"100%", maxHeight:"100%"}} alt="shooter2" border="1px solid #000000"/>
+                                <img src={shooter2} style={{maxWidth:"100%", maxHeight:"100%"}} alt="shooter2"/>
                             </Container>
                         </Stack>
                     </Grid>
+                    <Grid item xs={12}>
+                        <div className={classes.smallSpace}/>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <Footer className={classes.footer}/>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <div className={classes.bigSpace}/>
+                    </Grid>
                 </Grid>
-
-                <div className={classes.bigSpace}/>
-                <Footer className={classes.footer}/>
-            </MuiThemeProvider>
         </div>
     );
 }

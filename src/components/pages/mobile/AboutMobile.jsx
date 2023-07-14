@@ -20,7 +20,6 @@ function About() {
 
     return (
         <div className="About">
-            <MuiThemeProvider theme={Look.themeDark}>
                 <div className={classes.wrapper}>
                     <TypeAnimation
                         style={{
@@ -228,10 +227,16 @@ function About() {
                             </Typography>
                         </Container>
                     </Grid>
+                    <Grid item xs={12}>
+                        <div className={classes.smallSpace}/>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <Footer className={classes.footer}/>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <div className={classes.bigSpace}/>
+                    </Grid>
                 </Grid>
-                <div className={classes.bigSpace}/>
-                <Footer className={classes.footer}/>
-            </MuiThemeProvider>
         </div>
     );
 }

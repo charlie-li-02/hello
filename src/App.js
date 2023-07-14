@@ -7,13 +7,95 @@ import NavBar from "./components/NavBar";
 import NavBarMobile from "./components/NavBarMobile";
 import * as Look from "./components/pages/Look";
 import {CssBaseline, MuiThemeProvider} from "@material-ui/core";
+import Particles from "react-tsparticles";
+import {loadFull} from "tsparticles";
 
 function App() {
-    return (
-        <div className="App">
+    const particlesInit = useCallback(async engine => {
+        console.log(engine);
+        await loadFull(engine);
+    }, []);
 
+    const particlesLoaded = useCallback(async container => {
+        await console.log(container);
+    }, []);
+
+    const options = {
+        particles: {
+            number: {
+                value: 80,
+                density: {
+                    enable: true,
+                    area: 800
+                }
+            },
+            color: {
+                value: ["#2EB67D", "#ECB22E", "#E01E5B", "#36C5F0"]
+            },
+            shape: {
+                type: "circle"
+            },
+            opacity: {
+                value: 1
+            },
+            size: {
+                value: { min: 1, max: 8 }
+            },
+            links: {
+                enable: true,
+                distance: 150,
+                color: "#808080",
+                opacity: 0.4,
+                width: 1
+            },
+            move: {
+                enable: true,
+                speed: 3,
+                direction: "none",
+                random: false,
+                straight: false,
+                outModes: "out"
+            },
+            background: {
+                color: {
+                    value: "#121",
+                }
+            }
+        },
+        interactivity: {
+            events: {
+                onHover: {
+                    enable: true,
+                    mode: "grab"
+                },
+                onClick: {
+                    enable: true,
+                    mode: "push"
+                }
+            },
+            modes: {
+                grab: {
+                    distance: 140,
+                    links: {
+                        opacity: 1
+                    }
+                },
+                push: {
+                    quantity: 4
+                }
+            }
+        },
+        fullScreen: {
+            enable: true,
+            zIndex: -1
+        }
+    };
+    return (
+        <div className="App" id="App">
+            <Particles id="tsparticles" init={particlesInit} loaded={particlesLoaded} options={options}/>
             <MuiThemeProvider theme={Look.themeDark}>
                 <CssBaseline/>
+            <div id="backdrop">
             <BrowserView>
                 <Router>
                     <NavBar />
@@ -40,6 +122,7 @@ function App() {
                     </Switch>
                 </Router>
             </MobileView>
+            </div>
             </MuiThemeProvider>
         </div>
     )

@@ -8,6 +8,10 @@ import AboutMobile from "./mobile/AboutMobile";
 
 
 function About() {
+    const backdrop = document.getElementById('backdrop');
+    if (backdrop !== null) {
+        backdrop.style.backdropFilter = "blur(15px)";
+    }
     return (
         <>
             <BrowserView>

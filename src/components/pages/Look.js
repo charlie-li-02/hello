@@ -103,7 +103,7 @@ export const styles = makeStyles({
         textAlign: "center",
         position: "absolute",
         left: "50%",
-        transform: "translate(-50%, -50%)",
+        transform: "translate(-50%, -100%)",
     },
     hugeSpace:{
         marginTop: "6rem",

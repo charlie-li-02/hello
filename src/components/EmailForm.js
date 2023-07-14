@@ -12,21 +12,30 @@ init("user_jG4QtTBI0VeQsSypNIHkH");
 
 
 const TextFieldStyled = styled(TextField) ({
+    '& .MuiInputBase-root': {
+        color: 'white',
+    },
+    '& .MuiFormLabel-root': {
+        color: 'white',
+    },
     '& label.Mui-focused': {
-        color: 'black',
+        color: 'white',
+    },
+    '& .MuiInput-underline:before': {
+        borderBottomColor: '#8f8f8f',
     },
     '& .MuiInput-underline:after': {
-        borderBottomColor: 'black',
+        borderBottomColor: 'white',
     },
     '& .MuiOutlinedInput-root': {
         '& fieldset': {
-            borderColor: 'black',
+            borderColor: 'white',
         },
         '&:hover fieldset': {
-            borderColor: 'black',
+            borderColor: 'white',
         },
         '&.Mui-focused fieldset': {
-            borderColor: 'black',
+            borderColor: 'white',
         },
     },
 })
@@ -70,7 +79,7 @@ function EmailForm() {
             autoComplete="off"
         >
             <Stack spacing={4} direction="column" className={classes.emailForm}>
-                <Typography variant="h6" align={"left"} >SEND ME A MESSAGE </Typography>
+                <Typography variant="h6" align={"left"} style={{color: "#ffffff"}}>SEND ME A MESSAGE </Typography>
                 <TextFieldStyled
                     required
                     id="name-input"
