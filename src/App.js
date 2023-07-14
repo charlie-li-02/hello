@@ -134,6 +134,7 @@ window.onload = () => {
 export function blurBackdrop() {
     let backdrop = document.getElementById('backdrop');
     if (backdrop !== null) {
+        backdrop.setAttribute("style","-webkit-backdrop-filter:blur(15px)");
         backdrop.style.backdropFilter = "blur(15px)";
     }
 }
@@ -141,6 +142,7 @@ export function blurBackdrop() {
 export function unblurBackdrop() {
     let backdrop = document.getElementById('backdrop');
     if (backdrop !== null) {
+        backdrop.setAttribute("style","-webkit-backdrop-filter:none");
         backdrop.style.backdropFilter = "none";
     }
 }
