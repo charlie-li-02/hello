@@ -2,7 +2,6 @@ import React from 'react'
 import {Link, withRouter} from "react-router-dom";
 import {Toolbar} from "@material-ui/core";
 import {makeStyles} from "@material-ui/core/styles";
-import NavBar from "./NavBar";
 
 const styles = makeStyles({
     bar:{

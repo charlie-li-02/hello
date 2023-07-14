@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import {MuiThemeProvider, Typography} from "@material-ui/core";
+import {Typography} from "@material-ui/core";
 import Container from '@material-ui/core/Container'
 import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';

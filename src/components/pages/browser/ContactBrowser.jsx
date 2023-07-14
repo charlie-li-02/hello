@@ -1,5 +1,4 @@
 import React from "react";
-import {MuiThemeProvider, Typography} from "@material-ui/core";
 import * as Look from "../Look";
 import Stack from '@mui/material/Stack';
 import HorizontalStackContacts from "../../HorizontalStackContacts";

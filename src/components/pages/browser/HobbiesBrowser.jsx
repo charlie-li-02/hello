@@ -3,7 +3,6 @@ import {MuiThemeProvider, Typography} from "@material-ui/core";
 import * as Look from "../Look";
 import GamesImageList from "../../GamesImageList";
 import GundamImageListTop from "../../GundamImageListTop";
-import GundamImageListBottom from "../../GundamImageListBottom";
 import AOS from 'aos';
 import "aos/dist/aos.css";
 import Container from "@mui/material/Container";
@@ -106,7 +105,7 @@ function HobbiesBrowser() {
                                 Ever since then, I have rediscovered how much fun it is to read. Being able to absorb the
                                 thoughts of great authors through words is just something like watching YouTube videos can't replace.
                                 I love Sci-Fi and detective novels, as well as Chinese and Japanese literature. Some
-                                of my favourites are <br></br>
+                                of my favourites are <br> </br>
                                 <i> The Three-Body Problem</i> trilogy by Cixin Liu and <i>The Devotion of Suspect X </i>
                                 by Keigo Higashino.
                             </Typography>

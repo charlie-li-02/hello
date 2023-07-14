@@ -12,12 +12,7 @@ import {loadFull} from "tsparticles";
 
 function App() {
     const particlesInit = useCallback(async engine => {
-        console.log(engine);
         await loadFull(engine);
-    }, []);
-
-    const particlesLoaded = useCallback(async container => {
-        await console.log(container);
     }, []);
 
     const options = {
@@ -92,7 +87,7 @@ function App() {
     };
     return (
         <div className="App" id="App">
-            <Particles id="tsparticles" init={particlesInit} loaded={particlesLoaded} options={options}/>
+            <Particles id="tsparticles" init={particlesInit} options={options}/>
             <div id="backdrop">
             <MuiThemeProvider theme={Look.themeDark}>
                 <CssBaseline/>

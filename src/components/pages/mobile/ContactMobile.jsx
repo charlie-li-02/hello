@@ -1,5 +1,4 @@
 import React from "react";
-import {MuiThemeProvider, Typography} from "@material-ui/core";
 import * as Look from "../LookMobile";
 import Stack from '@mui/material/Stack';
 import HorizontalStackContacts from "../../HorizontalStackContactMobile";
@@ -12,7 +11,6 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import Footer from "../../Footer";
 import {TypeAnimation} from "react-type-animation";
-import Grid from "@mui/material/Grid";
 
 function ContactMobile() {
     const classes = Look.styles();
