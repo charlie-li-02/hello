@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/hello/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/hello/static/js/main.9a335e21.chunk.js",
-    "main.js.map": "/hello/static/js/main.9a335e21.chunk.js.map",
+    "main.js": "/hello/static/js/main.d69f56b2.chunk.js",
+    "main.js.map": "/hello/static/js/main.d69f56b2.chunk.js.map",
     "runtime-main.js": "/hello/static/js/runtime-main.946f5648.js",
     "runtime-main.js.map": "/hello/static/js/runtime-main.946f5648.js.map",
     "static/css/2.30fbed10.chunk.css": "/hello/static/css/2.30fbed10.chunk.css",
@@ -60,6 +60,8 @@
     "static/media/shooter2.60e727d9.jpg": "/hello/static/media/shooter2.60e727d9.jpg",
     "static/media/tick1.f0bcfadc.jpg": "/hello/static/media/tick1.f0bcfadc.jpg",
     "static/media/ubc.jpg": "/hello/static/media/ubc.aa1c8978.jpg",
+    "static/media/wabisabi1.4efec77f.jpg": "/hello/static/media/wabisabi1.4efec77f.jpg",
+    "static/media/wabisabi2.d27aebbd.jpg": "/hello/static/media/wabisabi2.d27aebbd.jpg",
     "static/media/website.cb0949df.jpg": "/hello/static/media/website.cb0949df.jpg",
     "static/media/wing1.39d25206.jpg": "/hello/static/media/wing1.39d25206.jpg",
     "static/media/wing2.61e16802.jpg": "/hello/static/media/wing2.61e16802.jpg"
@@ -69,6 +71,6 @@
     "static/css/2.30fbed10.chunk.css",
     "static/js/2.51d4ecad.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.9a335e21.chunk.js"
+    "static/js/main.d69f56b2.chunk.js"
   ]
 }
