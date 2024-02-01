@@ -21,6 +21,8 @@ import shooter2 from '../images/shooter2.jpg';
 import bloq1 from '../images/bloq1.png';
 import bloq2 from '../images/bloq2.png';
 import flow from '../images/flow.png';
+import wabisabi1 from '../images/wabisabi1.jpg';
+import wabisabi2 from '../images/wabisabi2.jpg';
 import AOS from 'aos';
 import "aos/dist/aos.css";
 import {TypeAnimation} from "react-type-animation";
@@ -30,6 +32,7 @@ const ASCRepoLink = "https://github.com/charlie-li-02/asc";
 const tickRepoLink = "https://github.com/charlie-li-02/tick";
 const flowRepoLink = "https://github.com/charlie-li-02/flow";
 const bloqRepoLink = "https://github.com/charlie-li-02/Bloq";
+const wabisabiRepoLink = "https://github.com/charlie-li-02/wabisabi";
 
 function Projects() {
     const classes = Look.styles();
@@ -55,12 +58,69 @@ function Projects() {
                         className={classes.heading}/>
                 </div>
                 <div className={classes.bigSpace} />
+
                 <Grid container spacing={2} style={{alignItems: "center"}}>
+
+
+                    <Grid item xs={12} data-aos="fade-up" >
+                        <Stack direction="column" spacing={0}>
+                            <Container maxWidth="sm">
+                                <img src={wabisabi1} style={{maxWidth:"100%", maxHeight:"100%"}} alt="wabisabi1"/>
+                            </Container>
+                        </Stack>
+                    </Grid>
+                    <Grid item xs={12} data-aos="fade-up">
+                        <Container maxWidth="md">
+                            <Stack direction="row" justifyContent="space-between">
+                                <Typography variant="h5" color="primary" align="left" style={{fontSize: "18px", fontWeight: "bold"}}>
+                                    wabisabi
+                                </Typography>
+                                <Typography variant="h6" color="primary" align="right" style={{fontSize: "15px", whiteSpace:"nowrap"}}>
+                                    January 2024 - January 2024
+                                </Typography>
+                            </Stack>
+                            <Typography variant="h6" className={classes.body} color="primary" align="left">
+                                <span style={{color: "#36C5F0"}}>Skills:</span> JavaScript, React.js, webpack.js, MUI, HTML, CSS
+                            </Typography>
+                            <Typography variant="h6" className={classes.body} color="primary" align="left" style={{textIndent: "20px"}}>
+                                Being a fan of Japanese pop culture and music, it could be hard to sing along to Japanese songs given the complex nature of kanji.
+                                Aimed to give users a better experience and a fun way to expand their kanji vocabulary, wabisabi is a Chrome extension that
+                                automatically extracts and annotates Japanese lyrics with hiragana from the currently playing song on YouTube Music, as long as
+                                the Chrome side panel is open. With its beautiful user interface and furigana annotation on the lyrics, singing along to your favourite
+                                Japanese song has never been easier.
+                            </Typography>
+                            <Stack direction="column" justifyContent="flex-start" alignItems="flex-end">
+                                <div className={classes.body}/>
+                                <Link component="button" variant="h6" color="primary" style={{fontSize: "13px", color: "#ECB22E"}} onClick={() => {
+                                    window.open(wabisabiRepoLink, '_blank').focus();
+                                }}>
+                                    Find me on GitHub
+                                </Link>
+                            </Stack>
+                        </Container>
+                    </Grid>
+                    <Grid item xs={12} data-aos="fade-up" >
+                        <Stack direction="column" spacing={0}>
+                            <Container maxWidth="sm">
+                                <img src={wabisabi2} style={{maxWidth:"100%", maxHeight:"100%"}} alt="wabisabi2"/>
+                            </Container>
+                        </Stack>
+                    </Grid>
+
+                    <Grid item xs={12} data-aos="fade-up">
+                        <Container maxWidth={false}>
+                            <Divider style={{background: "#8f8f8f"}}/>
+                        </Container>
+                    </Grid>
+
+
                     <Grid item xs={12} data-aos="fade-up" >
                         <Container maxWidth="sm">
                             <img src={flow} style={{maxWidth:"90%", maxHeight:"90%"}} alt="flow"/>
                         </Container>
                     </Grid>
+
+
                     <Grid item xs={12} data-aos="fade-up">
                         <Container maxWidth="md">
                             <Stack direction="row" justifyContent="space-between" alignItems="center">

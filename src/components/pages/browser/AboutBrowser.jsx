@@ -169,7 +169,7 @@ function About() {
                                     University of British Columbia
                                 </Typography>
                                 <Typography variant="h6" color="primary" align="right" style={{fontSize: "18px", whiteSpace:"nowrap"}}>
-                                    September 2019 - Now
+                                    September 2019 - December 2023
                                 </Typography>
                             </Stack>
                             <Typography variant="h6" className={classes.body} color="primary" align="left" style={{fontSize: "20px", whiteSpace:"nowrap"}}>
@@ -213,7 +213,7 @@ function About() {
                                     University of British Columbia
                                 </Typography>
                                 <Typography variant="h6" color="primary" align="right" style={{fontSize: "18px", whiteSpace:"nowrap"}}>
-                                    September 2018 - Now
+                                    September 2018 - December 2023
                                 </Typography>
                             </Stack>
                             <Typography variant="h6" className={classes.body} color="primary" align="left" style={{fontSize: "20px", whiteSpace:"nowrap"}}>
